@@ -27,8 +27,9 @@ pip install -r requirements.txt
 cp .streamlit/secrets.toml.example .streamlit/secrets.toml   # edita la clave
 streamlit run app.py
 ```
-Por defecto la contraseña es `ev48-rm-2026` si no defines `secrets.toml` ni la variable
-`EAUTO_DASH_PASSWORD`. **Cámbiala antes de publicar.**
+La contraseña de acceso se define en `.streamlit/secrets.toml` (clave `password`) o en la variable
+de entorno `EAUTO_DASH_PASSWORD`. **No hay clave por defecto**: sin ese secret, la app queda
+bloqueada (seguridad para repo público).
 
 ## Publicar en la web con acceso restringido
 

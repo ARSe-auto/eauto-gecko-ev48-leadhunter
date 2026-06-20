@@ -40,13 +40,15 @@ st.markdown(CSS, unsafe_allow_html=True)
 
 
 # ───────────────────────── AUTENTICACIÓN ─────────────────────────
-def _expected_password() -> str:
+def _expected_password():
+    """Contraseña de acceso. SOLO desde secrets/entorno — sin default en el código
+    (el repo es público, así que un default hardcodeado sería un agujero de seguridad)."""
     try:
         if "password" in st.secrets:
             return str(st.secrets["password"])
     except Exception:
         pass
-    return os.environ.get("EAUTO_DASH_PASSWORD", "ev48-rm-2026")
+    return os.environ.get("EAUTO_DASH_PASSWORD")  # None si no está configurada
 
 
 def check_password() -> bool:
@@ -54,19 +56,22 @@ def check_password() -> bool:
         return True
     st.markdown("<div class='hero'><h1>⚡ E-Auto Global · Gecko EV48</h1>"
                 "<p>Lead Hunter — acceso restringido</p></div>", unsafe_allow_html=True)
+    expected = _expected_password()
+    if not expected:
+        st.warning("🔒 Acceso aún no configurado. El administrador debe definir la clave "
+                   "**`password`** en los *Secrets* de la app (Manage app → Settings → Secrets).")
+        return False
     with st.form("login"):
         st.text_input("Contraseña de acceso", type="password", key="pwd")
         ok = st.form_submit_button("Ingresar", type="primary")
     if ok:
-        if hmac.compare_digest(st.session_state.get("pwd", ""), _expected_password()):
+        if hmac.compare_digest(st.session_state.get("pwd", ""), expected):
             st.session_state["auth_ok"] = True
             st.session_state.pop("pwd", None)
             st.rerun()
         else:
             st.error("Contraseña incorrecta.")
-    st.caption("Acceso solo para el equipo comercial de E-Auto Global. "
-               "Define la contraseña en `.streamlit/secrets.toml` (clave `password`) o la variable "
-               "de entorno `EAUTO_DASH_PASSWORD`.")
+    st.caption("Acceso solo para el equipo comercial de E-Auto Global.")
     return False
 
 
