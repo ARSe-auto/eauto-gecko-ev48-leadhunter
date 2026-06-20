@@ -1,0 +1,2860 @@
+[
+ {
+  "nombre": "PepsiCo Chile (Evercrisp / snacks y bebidas)",
+  "industria": "Consumo masivo (snacks, bebidas, alimentos)",
+  "nivel": 1,
+  "ubicacion": "Plantas y CD en Cerrillos y Santa Marta (Maipu), Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "fuerte",
+  "potencial_elect": "alto",
+  "dolor": "Reparto directo (DSD) a mas de 60.000 puntos de venta con rutas urbanas densas y repetitivas en la RM; necesidad de bajar emisiones y costo operativo en la ultima milla, donde aun conviven vehiculos diesel y GNC.",
+  "beneficio_ev48": "La EV48 es la van ideal para densificar el reparto urbano de cajas de snacks/bebidas a almacenes y kioscos en la RM, ampliando una flota EV ya probada (Maxus eDeliver 9) con menor costo de mantencion y carga en sus electroterminales Copec Voltex existentes.",
+  "decisores_titulos": [
+   "Gerente General (General Manager)",
+   "Director de Supply Chain / Logistica",
+   "Gerente de Sustentabilidad",
+   "Jefe de Flota / Distribucion"
+  ],
+  "senales": [
+   "54 vans Maxus eDeliver 9 100% electricas incorporadas en 2024 (Andes Motor)",
+   "Total de 72 vehiculos electricos + 1 tractocamion electrico para distribucion en Santa Marta (Maipu) y Cerrillos",
+   "73 cargadores electricos instalados con Copec Voltex",
+   "Estrategia global PepsiCo Positive (pep+); reduccion de 401 ton CO2/ano",
+   "Cobertura de +60.000 puntos de venta y 99% de hogares chilenos"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Operacion de reparto directo masivo con epicentro en la RM (Cerrillos/Maipu), ya electrificando agresivamente su flota de vans. Mercado caliente para reposicion y expansion con EV48.",
+  "veh_estimados": "300-1000 (DSD nacional, gran parte RM)",
+  "vans_estimadas": "100-300 vans de reparto urbano (72+ ya electricas)",
+  "fuentes": [
+   "https://www.andesmotor.cl/en/-/andes-motor-electrifica-a-pepsico-chile-con-una-flota-de-54-vehiculos-maxus-edeliver-9"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Ideal S.A. (Grupo Bimbo Chile)",
+  "industria": "Consumo masivo (panificacion y pasteleria industrial)",
+  "nivel": 1,
+  "ubicacion": "Planta Quilicura y centro de operaciones Lo Espejo, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Reparto directo en tienda (DSD) de pan y pasteleria con alta frecuencia diaria y rutas urbanas cortas y repetitivas a miles de almacenes y supermercados en la RM; flota de reparto aun mayoritariamente a combustion pese a metas Net Zero del grupo.",
+  "beneficio_ev48": "El perfil de ruta de Ideal (recorridos urbanos cortos, parada-arranque constante, retorno diario al CD) es el caso de uso optimo para la EV48: autonomia suficiente, carga nocturna en Quilicura/Lo Espejo y costo por km muy inferior al diesel.",
+  "decisores_titulos": [
+   "Director de Operaciones / Supply Chain",
+   "Jefe de Transporte y Analisis de Flota",
+   "Gerente de Sustentabilidad",
+   "Gerente de Distribucion"
+  ],
+  "senales": [
+   "Grupo Bimbo opera la flota electrica mas grande de Latinoamerica (2.639 EV regionales) y planifica fabricar miles de camiones electricos de reparto",
+   "Planta Quilicura 100% energia renovable con el mayor techo solar de Latinoamerica",
+   "CEDIS Quilicura (US$54M) que abastece 24 centros de venta en Chile",
+   "Compromiso Net Zero a 2050; RE100 alcanzado en 2021",
+   "Posicion dedicada de Analisis de Transporte y Flota en su operacion chilena"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Modelo DSD intensivo con base RM (Quilicura/Lo Espejo) y matriz global lider en electromovilidad pero con Chile aun por electrificar la ultima milla. Encaje directo y de alto volumen para EV48.",
+  "veh_estimados": "300-1000 (reparto DSD nacional con fuerte presencia RM)",
+  "vans_estimadas": "100-300 vehiculos de reparto urbano",
+  "fuentes": [
+   "https://www.grupobimbo.com/en/press/releases/productivity/ideal-presents-new-distribution-center-quilicura"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "KARRI (ex LoLlevo by Transvip)",
+  "industria": "Logística de última milla / paquetería e-commerce",
+  "nivel": 1,
+  "ubicacion": "Santiago, Región Metropolitana (operación nacional)",
+  "foco_rm": true,
+  "flota_band": "muy_grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Costo operativo y emisiones de una flota de >1.000 vehículos de combustión en reparto urbano repetitivo de la RM; presión por entregas same/next-day eficientes y huella de carbono ante clientes corporativos.",
+  "beneficio_ev48": "La EV48 reemplaza furgones de combustión en rutas urbanas RM de kilometraje predecible, reduciendo costo por km y emisiones; encaja con su estrategia ya declarada de electrificar la última milla.",
+  "decisores_titulos": [
+   "Gerente de Operaciones / Last Mile",
+   "Gerente de Flota y Logística",
+   "Gerente de Sostenibilidad",
+   "Gerente General"
+  ],
+  "senales": [
+   "Marca de última milla de Transvip con flota declarada de >1.000 vehículos y operación intensiva en la RM",
+   "Anunció incorporación de 30 furgones eléctricos (2022) y compras de vehículos eléctricos (BYD)",
+   "Rebranding LoLlevo a KARRI consolidando operación last mile en Chile y LatAm",
+   "Meta sectorial de electrificar 100% la última milla hacia 2025"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Operador de última milla con la flota más grande del segmento independiente, foco urbano en la RM, apetito EV ya demostrado y acceso directo a decisores. Greenfield/parcial para la EV48 al estar en plena transición de flota.",
+  "veh_estimados": ">1.000 vehículos",
+  "vans_estimadas": "Cientos de furgones de reparto urbano; 30+ ya eléctricos",
+  "fuentes": [
+   "https://www.revistalogistec.com/logistica/rrhh-2/3977-lollevo-by-transvip-mira-al-futuro-y-anuncia-importante-inversion-en-electromovilidad"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Hospital del Trabajador / ACHS (Asociación Chilena de Seguridad)",
+  "industria": "Salud privada / mutualidad de seguridad laboral (hospital + red de salud ocupacional)",
+  "nivel": 1,
+  "ubicacion": "Casa matriz y Hospital del Trabajador en Providencia, RM; agencias y centros de salud en toda la RM y el país",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "fuerte",
+  "potencial_elect": "alto",
+  "dolor": "Cientos de expertos en prevención, higienistas y ejecutivos visitan diariamente empresas adheridas en la RM con recorridos urbanos repetitivos; combustible, mantención y huella de la flota de terreno son costos relevantes y visibles ante su mandato de carbono-neutralidad.",
+  "beneficio_ev48": "La van EV48 reemplaza/complementa autos y camionetas de cuadrillas de terreno y traslado de insumos/equipos preventivos en ciudad, bajando costo por km y reforzando el storytelling de electromovilidad que ya iniciaron en 2020.",
+  "decisores_titulos": [
+   "Gerente de Asuntos Legales y Corporativos",
+   "Gerente de Sostenibilidad / Asuntos Corporativos",
+   "Gerente de Operaciones / Administración",
+   "Jefe de Flota y Servicios Generales",
+   "Gerente de Prevención de Riesgos"
+  ],
+  "senales": [
+   "Estrenó en 2020 la flota corporativa de autos eléctricos más grande del país (25 Hyundai Ioniq) para trabajo preventivo",
+   "Instaló cargadores en edificio corporativo Ramón Carnicer y en agencias",
+   "Meta declarada de aporte a la carbono-neutralidad de Chile 2050",
+   "Memoria Integrada 2024 con hitos en energía limpia, electromovilidad y digitalización"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Máxima prioridad: ya validó EV en operación (25 unidades), tiene flota grande de terreno con recorridos urbanos repetitivos en la RM, ESG explícito y capacidad financiera muy alta. El reto es que competidor_ev es fuerte (ya tienen proveedor EV), pero la EV48 abre el nicho de van de carga/cuadrilla que los Ioniq no cubren.",
+  "veh_estimados": "300-1000 (flota corporativa de terreno nacional; ya incluye 25 EV)",
+  "vans_estimadas": "Decenas a varias decenas de vans/camionetas para cuadrillas e insumos en la RM",
+  "fuentes": [
+   "https://www.revistaei.cl/2020/02/18/autos-electricos-achs-incorpora-25-unidades-a-su-flota-corporativa/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Mutual de Seguridad CChC",
+  "industria": "Salud privada / mutualidad de seguridad laboral (Hospital Clínico + red de centros de salud ocupacional)",
+  "nivel": 1,
+  "ubicacion": "Hospital Clínico en Estación Central, RM; +80 centros de salud, agencias y centros de atención a nivel nacional con fuerte presencia RM",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Más de 500.000 trabajadores adheridos exigen visitas de prevención y asesorías en terreno en empresas de toda la RM; la flota de expertos y cuadrillas hace recorridos urbanos repetitivos con altos costos operativos y exposición reputacional.",
+  "beneficio_ev48": "EV48 para cuadrillas de prevención, traslado de equipos de medición/insumos y movilización urbana de personal técnico, alineado con su propia oferta de asesoría en electromovilidad a clientes (predica con el ejemplo).",
+  "decisores_titulos": [
+   "Gerente de Sostenibilidad / Asuntos Corporativos",
+   "Gerente de Operaciones",
+   "Gerente de Administración y Servicios Generales",
+   "Jefe de Flota",
+   "Gerente Comercial / de Prevención"
+  ],
+  "senales": [
+   "Ofrece servicio de asesoría en Electromovilidad a empresas adheridas",
+   "Red de +80 centros de salud y +500.000 trabajadores cubiertos",
+   "Plan anual de gestión de seguridad y salud con foco preventivo en terreno",
+   "Mandato sectorial de descarbonización en mutualidades"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Par directo de ACHS: mutualidad con flota grande de terreno y recorridos urbanos repetitivos en la RM, capacidad financiera muy alta y apetito EV evidenciado por su propia consultoría de electromovilidad. competidor_ev parcial porque su adopción de flota EV está menos consolidada que ACHS.",
+  "veh_estimados": "300-1000 (flota nacional de terreno y administrativa)",
+  "vans_estimadas": "Decenas de vans/camionetas para cuadrillas y traslados RM",
+  "fuentes": [
+   "https://www.mutual.cl/portal/publico/empresa/home/servicios-integrales/prevencion-de-riesgos/seguridad-en-centros-de-trabajo/asesorias/electromovilidad/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Enel X Way Chile",
+  "industria": "Electromovilidad / gestión de flotas eléctricas y carga (filial de Enel Chile)",
+  "nivel": 1,
+  "ubicacion": "Santiago, Región Metropolitana (operación nacional)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "lider",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "fuerte",
+  "potencial_elect": "alto",
+  "dolor": "Necesita vehículos eléctricos comerciales (última milla/distribución) para alimentar su oferta Fleet-as-a-Service y leasing operativo a clientes, además de su propia flota operativa de instalación/mantenimiento de cargadores en la RM.",
+  "beneficio_ev48": "La EV48 puede integrarse a su catálogo Fleet-as-a-Service como van de última milla/servicio y servir a sus propias cuadrillas de instalación de electrolineras en Santiago, donde ya tienen infraestructura de carga propia.",
+  "decisores_titulos": [
+   "Head of e-Mobility / Gerente de Electromovilidad",
+   "Fleet Solutions Manager",
+   "Gerente de Operaciones",
+   "Jefe de Compras / Procurement"
+  ],
+  "senales": [
+   "Filial creada en 2022 dedicada 100% a e-mobility",
+   "Modelo Fleet-as-a-Service con vehículos+carga+mantenimiento",
+   "Meta de 1.200 puntos de carga públicos al 2026",
+   "Socio de carga de flotas eléctricas de carga (Chilexpress, Unilever)"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Propias para cuadrillas de instalación de carga: ~10-40 en RM; potencial de canal vía Fleet-as-a-Service mucho mayor",
+  "veh_estimados": "Decenas de vehículos operativos propios + cartera de flotas gestionadas",
+  "justificacion": "Actor clave RM en electromovilidad con sede en Santiago; es simultáneamente prospecto (flota propia de cuadrillas y revendedor vía FaaS) y competidor parcial al ofrecer sus propias soluciones de van eléctrica. Alta capacidad financiera (Enel) y máximo apetito EV, pero competidor_ev fuerte.",
+  "fuentes": [
+   "https://www.enelx.com/cl/es/empresas/movilidad-electrica/flotas-de-vehiculos-electricos"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Engie Chile (servicios de energía y movilidad)",
+  "industria": "Energía / servicios energéticos, eficiencia energética y movilidad eléctrica",
+  "nivel": 1,
+  "ubicacion": "Las Condes, Santiago (sede); operación nacional y de servicios en la RM",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "lider",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "mixto",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Operan cuadrillas de mantenimiento eléctrico, climatización, recambio LED de alumbrado e instalación de cargadores en +100 edificios de oficinas en la RM (acuerdo con CBRE), lo que exige vehículos de servicio urbano repetitivo en Santiago.",
+  "beneficio_ev48": "Van eléctrica para sus cuadrillas técnicas de eficiencia energética y mantenimiento de edificios en la RM, coherente con su posicionamiento bajo en carbono y permitiéndole 'predicar con el ejemplo' ante clientes corporativos.",
+  "decisores_titulos": [
+   "Gerente de Soluciones Energéticas / Energy Solutions",
+   "Gerente de Operaciones y Servicios",
+   "Jefe de Flota",
+   "Gerente de Sostenibilidad",
+   "Jefe de Compras"
+  ],
+  "senales": [
+   "Acuerdo con CBRE para eficiencia energética en +100 edificios de oficinas de la RM",
+   "Instalación de cargadores y recambio LED como servicio",
+   "Operó flota de 30 taxis ejecutivos eléctricos y ~100 buses eléctricos en Santiago",
+   "Posicionamiento global low-carbon"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: ~20-60 vehículos de servicio para cuadrillas en la RM",
+  "veh_estimados": "Estimación: flota de servicios de varias decenas en RM",
+  "justificacion": "Sede en Santiago y operación intensiva de servicios urbanos en la RM (mantenimiento de edificios, alumbrado, climatización, instalación de carga) que demanda vans de servicio. Gran capacidad financiera y liderazgo ESG. Competidor parcial porque también promueve electromovilidad, pero como cliente de vans de cuadrilla el ajuste es alto.",
+  "fuentes": [
+   "https://www.mch.cl/2020/02/10/el-plan-verde-de-engie/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Novofarma Service S.A.",
+  "industria": "Operador logístico farmacéutico (3PL salud)",
+  "nivel": 1,
+  "ubicacion": "Av. Víctor Uribe 2280, Quilicura, Región Metropolitana, Santiago",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "fuerte",
+  "potencial_elect": "alto",
+  "dolor": "Distribuye a farmacias, hospitales, clínicas, distribuidores y veterinarias con cadena de frío y trazabilidad. Necesita ampliar flota baja en emisiones para reparto urbano RM sin comprometer control de temperatura ni costos.",
+  "beneficio_ev48": "Ya validó electromovilidad (5 EVs iniciales con plan de ampliar); la EV48 escala su flota urbana RM de última milla con autonomía y carga útil para entregas frecuentes a puntos de salud, reduciendo CO2 y costos.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones / Logística",
+   "Jefe de Transporte y Distribución",
+   "Encargado de Sostenibilidad / Electromovilidad",
+   "Gerente de Flota"
+  ],
+  "senales": [
+   "Incorporó 5 vehículos eléctricos con plan declarado de sumar más",
+   "Comunicación pública 'Novofarma se suma a la electromovilidad'",
+   "Camiones y camionetas climatizados con GPS y sondas de temperatura (NT147)",
+   "CD para 40.000 pallets en Quilicura RM, fundado por Grünenthal, Bagó y Boehringer"
+  ],
+  "vans_estimadas": "30-100 furgones/camionetas de reparto urbano RM (incluye 5+ eléctricos confirmados)",
+  "veh_estimados": "100-300 vehículos entre camiones troncales y última milla",
+  "dato_calidad": "investigado",
+  "justificacion": "3PL farmacéutico líder en Quilicura RM con última milla urbana intensiva y cadena de frío. Ya adoptó EVs públicamente, lo que confirma apetito y encaje, aunque significa competidor_ev fuerte (greenfield no). Organigrama claro y vocería ESG facilitan el acceso. Encaje muy alto para escalar con EV48.",
+  "fuentes": [
+   "https://www.novofarma.com/novofarma-electromovilidad/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "PF Alimentos (Cecinas PF / Productos Fernandez)",
+  "industria": "Cecinas y alimentos procesados refrigerados",
+  "nivel": 1,
+  "ubicacion": "Nuevo Centro de Distribucion en San Bernardo, Región Metropolitana (produccion en Talca)",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Su modelo logistico separa vehiculos grandes (transporte de carga desde Talca por Ruta 5) de vehiculos mas pequenos que hacen el reparto final dentro de Santiago; necesita flota urbana eficiente y de bajo costo para la ultima milla refrigerada en la RM y Valparaiso.",
+  "beneficio_ev48": "La van Gecko EV48 calza exactamente con el segmento de 'vehiculos mas pequenos para reparto dentro de la capital' que PF definio en su nuevo CD de San Bernardo: rutas urbanas cortas y repetitivas, ideales para autonomia EV y recarga nocturna en el CD.",
+  "decisores_titulos": [
+   "Gerente de Logistica y Distribucion",
+   "Gerente de Cadena de Suministro",
+   "Jefe de Transporte / Flota",
+   "Gerente de Operaciones",
+   "Gerente de Sostenibilidad"
+  ],
+  "senales": [
+   "Factura ~US$600 millones anuales; plan de inversion US$200M en 5 anos",
+   "Nuevo CD en San Bernardo (RM) de 6,15 ha, US$74M, dedicado a distribucion a la RM y Valparaiso",
+   "Modelo logistico declarado: vehiculos grandes por Ruta 5 + vehiculos pequenos para reparto urbano en Santiago",
+   "Empresa centenaria en crecimiento y diversificacion de marcas"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 1: encaje casi perfecto. PF declara publicamente que su nuevo CD en San Bernardo usara vehiculos pequenos para la ultima milla dentro de Santiago, justo el caso de uso de la EV48. Greenfield EV, RM-first, alta capacidad financiera e inversion logistica activa.",
+  "fuentes": [
+   "https://www.meganoticias.cl/nacional/455598-nueva-planta-de-distribucion-pf-donde-estara-ubicada-en-la-region-metropolitana-pdp-12-08-2024.html"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Bupa Chile (Clínica Bupa Santiago + Centros Médicos IntegraMédica)",
+  "industria": "Salud privada (aseguradora-prestador: clínicas + red de centros médicos)",
+  "nivel": 2,
+  "ubicacion": "Clínica Bupa Santiago en La Florida (RM) y red de ~38 centros médicos IntegraMédica, con fuerte concentración en la RM",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Red de decenas de centros IntegraMédica en la RM con toma de muestras genera flujo diario y repetitivo de transporte de muestras, insumos y documentación entre sucursales y hacia el laboratorio central, en plena ciudad.",
+  "beneficio_ev48": "EV48 para consolidar la logística inter-centros de muestras/insumos en la RM y servicios a domicilio, alineado con la agenda de sostenibilidad global de Bupa (eficiencia energética, economía circular).",
+  "decisores_titulos": [
+   "Director de Operaciones IntegraMédica",
+   "Gerente de Logística / Supply Chain",
+   "Gerente de Sostenibilidad Bupa Chile",
+   "Jefe de Laboratorio Central",
+   "Jefe de Servicios Generales y Flota"
+  ],
+  "senales": [
+   "Red de ~38 centros médicos IntegraMédica con toma de muestras",
+   "Clínica Bupa Santiago, la mayor clínica Bupa del mundo, con foco en eficiencia energética",
+   "Iniciativas de sostenibilidad (contenedores reutilizables de cortopunzantes hasta 600 usos desde 2023)",
+   "Respaldo de Bupa, multinacional con metas climáticas corporativas"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Red densa de centros en la RM con logística urbana repetitiva de muestras e insumos, respaldo financiero muy alto de multinacional con ESG corporativo y greenfield EV. Nivel 2 porque la flota propia (no tercerizada) es mediana y el caso de van es de soporte logístico más que última milla masiva.",
+  "veh_estimados": "100-300 entre logística inter-centros, muestras y administración",
+  "vans_estimadas": "Decenas de furgones/vans para reparto de muestras e insumos entre centros RM",
+  "fuentes": [
+   "https://www.integramedica.cl/sobre-nosotros/bupa-chile"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "GTD Manquehue (Grupo GTD)",
+  "industria": "Telecomunicaciones / ISP fibra óptica (FTTH) y TV",
+  "nivel": 1,
+  "ubicacion": "Región Metropolitana (Santiago); casa matriz grupo en Huechuraba/Las Condes",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Cuadrillas de instalación y servicio técnico FTTH recorriendo comunas de la RM a diario (Santiago, Viña, Rancagua adyacentes); alto consumo de combustible en rutas urbanas cortas y repetitivas, mantención de flota de camionetas y presión por descarbonizar como grupo con compromisos ESG.",
+  "beneficio_ev48": "La EV48 cubre rutas urbanas RM de cuadrillas técnicas (paradas frecuentes, baja autonomía requerida, retorno a base) con costo operativo/km menor, cero emisiones locales y refuerzo del relato de sostenibilidad del grupo (Sello HuellaChile, energía 100% renovable con Colbún).",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Logística y Flota",
+   "Jefe de Servicio Técnico / Field Services",
+   "Gerente de Sostenibilidad",
+   "Gerente de Compras / Abastecimiento"
+  ],
+  "senales": [
+   "GTD Manquehue orientada al mercado residencial y corporativo de la RM, ~80% de clientes residenciales en Santiago con FTTH",
+   "Grupo con +42 años, presencia en 6 países, escala financiera consolidada",
+   "Obtuvo Sello HuellaChile (medición de GEI) y alianza con Colbún para energía 100% renovable en infraestructura crítica"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 1: ISP con red propia FTTH y operación intensiva de cuadrillas de instalación/servicio técnico en comunas urbanas de la RM (rutas repetitivas, retorno a base), respaldo financiero de un gran grupo, ESG demostrable (HuellaChile + energía renovable) y organigrama/decisores claros vía venta directa. Encaje fuerte con EV48 para servicio técnico urbano RM.",
+  "fuentes": [
+   "https://www.latercera.com/diario-impreso/las-nuevas-redes-de-gtd-manquehue/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Unilever Chile",
+  "industria": "Consumo masivo (alimentos, cuidado personal y del hogar)",
+  "nivel": 1,
+  "ubicacion": "Centro de Distribución en Lampa, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "fuerte",
+  "potencial_elect": "alto",
+  "dolor": "Reparto secundario/última milla desde el CD de Lampa a puntos de venta urbanos en la RM con altos costos de combustible y presion de descarbonizacion Scope 1; la flota electrica actual son camiones primarios de alto tonelaje, dejando la capilaridad urbana liviana sin electrificar.",
+  "beneficio_ev48": "La EV48 cubre el segmento que sus camiones de 25t no atienden: reparto urbano repetitivo de cajas a almacenes, farmacias y supermercados de barrio en la RM, con bajo costo por km, cero emisiones y aprovechando los cargadores Enel X ya instalados en Lampa.",
+  "decisores_titulos": [
+   "Head of Transport / Jefe de Transporte",
+   "Sustainability Manager / Gerente de Sustentabilidad",
+   "Gerente de Logistica / Supply Chain",
+   "Gerente de Operaciones Cono Sur"
+  ],
+  "senales": [
+   "Inauguro en julio 2024 su primera flota 100% electrica de camiones de alto tonelaje (4 Maxus H6 490, 25t)",
+   "CD de Lampa abastecido con energia renovable y 2 cargadores ultrarrapidos Enel X de 150 kW",
+   "Climate Transition Action Plan con meta de carbono neutralidad a 2039",
+   "Primera empresa de consumo masivo en Chile con flota primaria totalmente electrica"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Multinacional de consumo masivo con CD propio en la RM (Lampa), distribucion urbana repetitiva, cultura EV ya demostrada e infraestructura de carga instalada. Encaje ideal para vans EV48 en el tramo de reparto liviano que aun usa diesel.",
+  "veh_estimados": "100-300 (reparto primario + secundario RM)",
+  "vans_estimadas": "30-80 vehiculos livianos/medianos de reparto secundario",
+  "fuentes": [
+   "https://www.enelx.com/cl/es/historias/2024/07/flota-camiones-electricos-unilever"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Viña Concha y Toro",
+  "industria": "Bebidas (vinos y licores)",
+  "nivel": 3,
+  "ubicacion": "Casa matriz y operaciones en la Región Metropolitana (Santiago); plantas en Isla de Maipo, etc.",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "lider",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "medio",
+  "dolor": "Distribucion domestica de vino a retail y canal HORECA en el Gran Santiago combinada con transporte interurbano/exportacion; el reparto urbano repetitivo a restaurantes, hoteles y tiendas en la RM aun se hace con vehiculos a combustion pese a sus fuertes metas climaticas.",
+  "beneficio_ev48": "La EV48 electrifica el tramo urbano de reparto domestico (HORECA y retail RM), aportando una victoria visible a su agenda de carbono neutralidad 2040 y reduciendo costos en rutas cortas y repetitivas dentro de Santiago.",
+  "decisores_titulos": [
+   "Gerente de Sustentabilidad",
+   "Gerente de Logistica / Distribucion Nacional",
+   "Jefe de Transporte / Flota",
+   "Gerente de Operaciones Chile"
+  ],
+  "senales": [
+   "Certificacion Carbono Neutral y meta de carbono neutralidad a 2040 (alineada IWCA)",
+   "Reduccion de 24% de huella de carbono desde 2017 (a 2024); +32 plantas solares",
+   "Incorporacion de transporte ferroviario para exportaciones (planta-puerto)",
+   "Recertificacion en Codigo Nacional de Sustentabilidad; reportes robustos"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Lider ESG con fuerte agenda de descarbonizacion y operacion en la RM; aunque su perfil es mayormente interurbano/exportador, el reparto urbano domestico a HORECA/retail en Santiago es un caso valido para EV48. Encaje medio.",
+  "veh_estimados": "100-300 (flota mixta, parte urbana RM)",
+  "vans_estimadas": "20-50 vehiculos de reparto urbano domestico RM",
+  "fuentes": [
+   "https://www.pactoglobal.cl/vina-concha-y-toro-refuerza-su-compromiso-con-la-reduccion-del-co2/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Quick (Quick Chile)",
+  "industria": "Logística de última milla / fulfillment e-commerce",
+  "nivel": 1,
+  "ubicacion": "Renca, Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Operación same-day/next-day intensiva en zonas urbanas de alta demanda con +500 vehículos; costos de combustible y restricciones de circulación urbana presionan los márgenes de la última milla.",
+  "beneficio_ev48": "La EV48 cubre rutas urbanas repetitivas de Santiago con menor costo operativo y acceso a zonas con restricción vehicular, mejorando el costo por entrega en su core same-day RM.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Última Milla / Last Mile",
+   "Jefe de Flota",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Declara +500 vehículos dedicados a última milla con cobertura nacional",
+   "Casa matriz en Renca (RM) y foco operativo en Santiago y ciudades estratégicas",
+   "Servicios Same Day / Next Day / Express con plataforma SmartQuick",
+   "Integración con e-commerce y fulfillment (almacenaje + preparación + entrega)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Operador puro de última milla con flota grande, base en la RM y enfoque urbano same-day. Sin flota eléctrica visible (greenfield), con alto potencial de adopción y acceso directo por venta B2B.",
+  "veh_estimados": "+500 vehículos",
+  "vans_estimadas": "Mayoría furgones/furgonetas de reparto urbano",
+  "fuentes": [
+   "https://quick.cl/en/logistica-ultima-milla/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Empresas Ariztía",
+  "industria": "Proteína avícola (pollo, pavo) y alimentos refrigerados",
+  "nivel": 1,
+  "ubicacion": "Centro de Distribución Plaza Oeste, Cerrillos, Región Metropolitana (red nacional)",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Reparto refrigerado urbano diario de alto volumen a supermercados, carnicerias, HORECA y mayoristas desde su CD en Cerrillos hacia toda la RM; costo de combustible y mantenimiento de flota propia, mas presion de descarbonizacion del transporte de carga.",
+  "beneficio_ev48": "Gecko EV48 cubre rutas urbanas repetitivas y predecibles de ultima milla refrigerada en la RM con menor costo operativo por km, cero emisiones locales (relevante para acceso a zonas urbanas con restriccion) y menor ruido en repartos tempranos.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Gerente de Operaciones",
+   "Jefe de Flota / Transporte",
+   "Gerente de Sostenibilidad",
+   "Gerente de Abastecimiento / Compras"
+  ],
+  "senales": [
+   "Segundo mayor productor de pollo de Chile (~29% del mercado)",
+   "CD Plaza Oeste en Cerrillos (RM) + red nacional de distribucion (Melipilla, Rancagua, Chillan, Temuco, Puerto Montt)",
+   "Flota refrigerada propia para reparto a retail y HORECA",
+   "Marca de gran escala con capacidad financiera para invertir en flota"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 1: gran productor de proteina con CD propio en la RM (Cerrillos), reparto urbano intensivo de ultima milla a multiples canales y flota refrigerada propia; greenfield EV con alto potencial de electrificacion de rutas urbanas repetitivas. ESG medio (iniciativas pero sin reporte robusto de net-zero verificado encontrado).",
+  "fuentes": [
+   "https://www.ventas-ariztia.cl/Informacion/Red"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Mundo (Pacífico Cable SpA / Mundo Pacífico)",
+  "industria": "Telecomunicaciones / ISP fibra óptica, TV y móvil",
+  "nivel": 1,
+  "ubicacion": "Casa matriz en Concepción; expansión y operación en la Región Metropolitana (instaladores en Maipú y otras comunas)",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Crecimiento agresivo (~7.200 clientes nuevos/mes, ~980k conexiones) demanda gran volumen de instalaciones y mantenciones domiciliarias con cuadrillas (propias y vía contratista EMCORD) recorriendo comunas RM; flota de camionetas con uso urbano intensivo y costos de combustible/mantención al alza.",
+  "beneficio_ev48": "Vans eléctricas para las cuadrillas de instalación FTTH en la RM: rutas urbanas con paradas frecuentes y kilometraje diario acotado, donde la EV48 reduce TCO frente a camionetas a combustión y agrega un diferenciador verde alineado a su narrativa de inclusión digital.",
+  "decisores_titulos": [
+   "Gerente de Operaciones Técnicas",
+   "Gerente de Logística / Flota",
+   "Jefe Zonal RM",
+   "Gerente de Abastecimiento",
+   "Gerente de Personas (HSE)"
+  ],
+  "senales": [
+   "Cerró 2024 con ~980k conexiones y ~20% del mercado nacional de internet fijo; aspira al 2° lugar al 2027",
+   "Controlada por DigitalBridge (infraestructura digital global); EBITDA +30% e ingresos +25% en 2024",
+   "Publica vacantes de Técnico de Instalación de Servicio de Telecomunicaciones en Santiago (Maipú, RM) y suma contratista EMCORD para instalaciones"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 1: ISP grande en fuerte expansión con flota numerosa de cuadrillas de instalación FTTH operando en comunas urbanas de la RM (rutas repetitivas), respaldo financiero sólido (DigitalBridge) y greenfield EV (sin competidor eléctrico instalado). ESG sólo medio y acceso medio (matriz en Concepción) lo distinguen levemente de GTD, pero el volumen de instalaciones lo mantiene en nivel 1.",
+  "fuentes": [
+   "https://www.latercera.com/pulso/noticia/mundo-pacifico-bordea-el-millon-de-conexiones-de-internet-fijo-y-aspira-a-conseguir-el-segundo-lugar-en-2027/QTVGP2HKANAD5HH6NWBAYCP3OM/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "INACAP",
+  "industria": "Educación técnico-profesional (instituto profesional y CFT)",
+  "nivel": 1,
+  "ubicacion": "RM: 8 sedes (Apoquindo, Maipú, Pérez Rosales/Ñuñoa, Renca, Santiago Centro, Santiago Sur, La Granja, Puente Alto)",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Con 8 sedes en la RM requiere movilidad urbana frecuente para traslado de personal, valija interna, mantención y soporte técnico entre campus; al ser referente formador en electromovilidad, mantener flota a combustión contradice su posicionamiento de marca.",
+  "beneficio_ev48": "La EV48 sirve como vehículo de servicio y traslado inter-sedes en circuitos urbanos cortos de la RM, además de funcionar como caso demostrativo/educativo coherente con sus carreras de electromovilidad; recarga distribuida en sus 8 sedes.",
+  "decisores_titulos": [
+   "Director(a) de Operaciones / Infraestructura",
+   "Gerente(a) de Administración y Finanzas",
+   "Director(a) de Sostenibilidad",
+   "Director(a) Académico Área Mecánica y Electromovilidad"
+  ],
+  "senales": [
+   "8 sedes en la RM (alta movilidad inter-campus)",
+   "Líder declarado en formación de electromovilidad (~20.000 alumnos en carreras afines)",
+   "Firmó 3ª versión del compromiso público-privado de electromovilidad",
+   "Talleres con vehículos eléctricos en cada sede"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Red densa de sedes en la RM con necesidad de movilidad urbana repetitiva y un posicionamiento de marca en electromovilidad que crea apetito y credibilidad únicos para adoptar la EV48; ventaja reputacional clara.",
+  "vans_estimadas": "4-8 unidades de servicio/traslado distribuidas entre sedes RM",
+  "veh_estimados": "Flota de servicio/administrativa moderada repartida en 8 sedes RM",
+  "fuentes": [
+   "https://portales.inacap.cl/noticias/destacadas/noticias-destacadas-2020/inacap-renueva-su-compromiso-para-impulsar-la-electromovilidad-en-chile"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Red de Salud UC CHRISTUS (Hospital Clínico UC, Clínica San Carlos de Apoquindo y red de centros médicos)",
+  "industria": "Salud privada (red hospitalaria y de centros médicos)",
+  "nivel": 1,
+  "ubicacion": "Hospital Clínico UC (Marcoleta, Santiago) y Clínica San Carlos de Apoquindo (Las Condes); red de centros médicos en la RM, Valparaíso y Rancagua",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "mixto",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Servicio de toma de muestras a domicilio en 52 comunas de la RM (más de 900 exámenes) y logística inter-sedes de muestras, insumos y fármacos generan rutas urbanas diarias y repetitivas con cadena de frío y ventanas horarias estrictas.",
+  "beneficio_ev48": "EV48 ideal para móviles de toma de muestras a domicilio (UC CHRISTUS en Casa), reparto inter-sedes de muestras/insumos y soporte de hospitalización domiciliaria, con menor costo por km y refrigeración silenciosa en zona urbana.",
+  "decisores_titulos": [
+   "Director de Operaciones de la Red",
+   "Gerente de Logística / Abastecimiento",
+   "Jefe de Laboratorio Clínico",
+   "Gerente de Sostenibilidad",
+   "Jefe de Servicios Generales y Flota"
+  ],
+  "senales": [
+   "Toma de muestras a domicilio en 52 comunas de la RM con +900 tipos de exámenes",
+   "Programa UC CHRISTUS en Casa de atención domiciliaria",
+   "Red multi-sede que requiere transporte interno de muestras y anatomía patológica",
+   "Alianza PUC + CHRISTUS Health (mayor red privada del país)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaje de última milla muy fuerte: rutas urbanas repetitivas de muestras a domicilio en 52 comunas RM y logística inter-sedes, sin proveedor EV instalado (greenfield). Acceso medio por organigrama académico-hospitalario más difuso y canal mixto (algunas licitaciones).",
+  "veh_estimados": "100-300 entre móviles de muestras, logística inter-sedes y vehículos administrativos",
+  "vans_estimadas": "Decenas de móviles/vans para muestras a domicilio y reparto interno en la RM",
+  "fuentes": [
+   "https://www.ucchristus.cl/examenes-y-procedimientos/laboratorio-clinico/toma-de-muestras/santiago-centro"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Socofar S.A. (Sociedad Comercial Farmacéutica)",
+  "industria": "Distribución mayorista farmacéutica",
+  "nivel": 1,
+  "ubicacion": "Av. Vicuña Mackenna 3350, Macul, Región Metropolitana, Santiago",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "medio",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Distribuye a nivel nacional diariamente a una enorme red de farmacias (Cruz Verde propias/franquiciadas e independientes), con altos costos de combustible y presión regulatoria/ambiental urbana en la RM. Reparto repetitivo de alta frecuencia a puntos fijos.",
+  "beneficio_ev48": "La EV48 reduce costo por km y emisiones en rutas urbanas RM cortas y repetitivas a farmacias; menor mantenimiento y silencio para entregas en zonas con restricción. Refuerza narrativa ESG de matriz FEMSA.",
+  "decisores_titulos": [
+   "Gerente de Logística / Supply Chain",
+   "Gerente de Operaciones",
+   "Subgerente de Transporte y Distribución",
+   "Gerente de Sostenibilidad",
+   "Gerente de Compras / Abastecimiento"
+  ],
+  "senales": [
+   "Distribución diaria nacional a red Cruz Verde + independientes",
+   "Controlada por FEMSA (multinacional con metas de electromovilidad)",
+   "Centro de distribución de alta tecnología en Macul, RM",
+   "Terceriza transporte troncal con LIT Cargo (apetito por optimizar flota)"
+  ],
+  "vans_estimadas": "100-300 vehículos de reparto urbano/última milla (estimación; gran parte del transporte troncal es tercerizado)",
+  "veh_estimados": "300-1000 considerando flota total y tercerizados nacionales",
+  "dato_calidad": "investigado",
+  "justificacion": "Mayor distribuidor farmacéutico de Chile, base en Macul RM, reparto urbano repetitivo de altísima frecuencia. Distinto de la marca retail Cruz Verde y abastece también a terceros/independientes. Matriz FEMSA da apetito ESG/EV. Encaje fuerte para flota EV48 en RM.",
+  "fuentes": [
+   "https://www.emb.cl/negociosglobales/articulo.mvc?xid=1557"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "ON*NET Fibra (OnNet Fibra)",
+  "industria": "Telecomunicaciones / operador mayorista neutral de fibra óptica",
+  "nivel": 2,
+  "ubicacion": "Casa matriz en Santiago (RM); red en 16 regiones de Chile",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "medio",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Despliegue y mantención de +42.000 km de red de acceso y 4,3M de hogares pasados requiere cuadrillas de terreno con vehículos; parte importante de la operación es despliegue de red (mixto urbano/interurbano) más que visitas domiciliarias cortas.",
+  "beneficio_ev48": "EV48 para las cuadrillas de mantención y operación de red en tramos urbanos de la RM, donde las rutas son acotadas y repetitivas; aporta a metas ESG de un operador de infraestructura respaldado por capital institucional.",
+  "decisores_titulos": [
+   "Gerente de Operaciones de Red",
+   "Gerente de Despliegue / Field Operations",
+   "Gerente de Logística y Flota",
+   "Gerente de Sostenibilidad",
+   "Gerente de Abastecimiento"
+  ],
+  "senales": [
+   "Red mayorista neutral líder, ~42.000 km desplegados y 4,3M de hogares pasados en ~250 comunas",
+   "Propiedad de Telefónica Chile y KKR (capital institucional), escala financiera muy alta",
+   "66% del despliegue del último año concentrado en regiones (parte de la operación es interurbana/nacional)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: gran operador de infraestructura con flota numerosa y respaldo financiero muy alto, pero su operación es mayoritariamente despliegue/mantención de red (mixto urbano-interurbano y foco regional), no última milla domiciliaria intensiva en la RM, lo que reduce el ajuste directo de la van de cuadrilla urbana.",
+  "fuentes": [
+   "https://www.latercera.com/pulso/noticia/onnet-fibra-expande-su-cobertura-de-fibra-optica-con-millonaria-inversion-y-resalta-su-foco-en-regiones/7ASIF7ISHFCANFZATZHY54T4SM/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Mega Frio Chile / IceStar (logistica de frio 3PL)",
+  "industria": "Logistica refrigerada y congelada de alimentos (cadena de frio 3PL)",
+  "nivel": 2,
+  "ubicacion": "Sucursal y operacion en Santiago, Región Metropolitana (red nacional; Friofort en Buin)",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Operador 3PL de frio con miles de puntos de entrega en Chile; la ultima milla refrigerada/congelada es su talon de Aquiles declarado (rezago en automatizacion y aseguramiento de entrega final), y la RM concentra gran parte de su demanda urbana.",
+  "beneficio_ev48": "EV48 le permite ofrecer ultima milla refrigerada urbana mas eficiente y descarbonizada en la RM, diferenciandose frente a clientes con metas ESG y reduciendo costo operativo en rutas urbanas repetitivas con multiples paradas.",
+  "decisores_titulos": [
+   "Gerente de Operaciones / Logistica",
+   "Gerente de Distribucion y Ultima Milla",
+   "Jefe de Flota / Transporte",
+   "Gerente de Sostenibilidad"
+  ],
+  "senales": [
+   "Lider nacional en logistica integral de frio con 8 sucursales (incl. Santiago) y +6.000 puntos de entrega",
+   "IceStar (Patria/Americold) adquirio Friofort en 2023, quedando primero en la RM",
+   "Reconocimiento explicito del rezago en ultima milla de la industria de frio",
+   "Respaldo de fondos internacionales (capacidad de inversion en flota)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: aunque es 3PL (no productor de proteina), pertenece de lleno a la cadena de frio y hace ultima milla refrigerada urbana intensiva en la RM con flota grande. Competidor EV parcial (sector logistico ya ha incorporado EVs). Alto potencial de electrificacion de rutas urbanas.",
+  "fuentes": [
+   "https://portalinnova.cl/icestar-remece-la-logistica-refrigerada-y-congelada-de-alimentos-al-adquirir-friofort/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Llego (Llego.cl)",
+  "industria": "Operador logístico / última milla retail y e-commerce",
+  "nivel": 1,
+  "ubicacion": "Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "grande",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Gestiona +30.000 entregas diarias con +800 vehículos propios desde un centro de transferencia en la RM; alta exposición a costos de combustible y necesidad de cumplir SLA urbanos para clientes retail grandes.",
+  "beneficio_ev48": "La EV48 electrifica rutas urbanas de alto volumen y kilometraje predecible en la RM, bajando costo por entrega y dando argumento ESG frente a sus clientes corporativos (Walmart, Easy, Mercado Libre).",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Flota / Transporte",
+   "Gerente Comercial",
+   "Gerente General"
+  ],
+  "senales": [
+   "+800 vehículos propios declarados y +20 años de experiencia",
+   "+30.000 entregas diarias y centro de transferencia de 3.000 m2 en la RM",
+   "Cartera de clientes grandes: La Polar, Walmart, Easy, Herbalife, Mercado Libre",
+   "Foco en última milla urbana same-day / next-day"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Flota propia grande, foco urbano RM y volumen muy alto de entregas. Greenfield EV con alto potencial; adopción media por escala y necesidad de pilotar antes de masificar. Acceso B2B directo.",
+  "veh_estimados": "+800 vehículos propios",
+  "vans_estimadas": "Mayoría furgones de distribución urbana",
+  "fuentes": [
+   "https://marketing4ecommerce.cl/logistica-para-ecommerce-en-chile/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Grupo Saesa (Saesa)",
+  "industria": "Distribución eléctrica (generación, transmisión y distribución)",
+  "nivel": 2,
+  "ubicacion": "Sur de Chile (Ñuble a Aysén); sede corporativa parcial en Santiago",
+  "foco_rm": false,
+  "flota_band": "grande",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Mantiene flota grande de camionetas para transporte de brigadas y personal de terreno en faenas de distribución; busca electrificarla pero requiere autonomía y robustez para zonas semiurbanas y rurales.",
+  "beneficio_ev48": "Para tramos urbanos repetitivos de cuadrillas en ciudades del sur, la EV48 reduce costos operativos y emisiones; sin embargo el ajuste es bajo para terreno rural/4x4. Útil sólo en operación urbana de sus ciudades, no en RM.",
+  "decisores_titulos": [
+   "Gerente de Operaciones de Distribución",
+   "Jefe de Flota",
+   "Gerente de Sostenibilidad",
+   "Jefe de Adquisiciones"
+  ],
+  "senales": [
+   "Presentó 'la flota eléctrica más grande del sur de Chile' (34 camionetas eléctricas Voltera, 2022)",
+   "Programa de electrificación de flota iniciado en 2017 con meta 100% eléctrica",
+   ">900.000 clientes; brigadas de terreno activas"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "34 camionetas eléctricas declaradas (pickups), expansión proyectada",
+  "veh_estimados": "Cientos de vehículos de terreno en el grupo (10 regiones)",
+  "justificacion": "Pionero en electrificación de flota de cuadrillas en Chile y greenfield para vans, pero su operación es en el sur (fuera_rm) y orientada a camionetas 4x4 para terreno rural, por lo que el ajuste de la EV48 (van urbana) es limitado. Nivel 2 por relevancia de segmento pese a no ser RM-first.",
+  "fuentes": [
+   "https://www.revistaei.cl/2022/10/12/grupo-saesa-presenta-la-flota-electrica-mas-grande-del-sur-de-chile/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Farmacias del Dr. Simi Chile (Farmacias Similares)",
+  "industria": "Retail farmacéutico (medicamentos genéricos) con despacho",
+  "nivel": 1,
+  "ubicacion": "Casa matriz y 2 centros de distribución en Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Modelo de 'medicamentos a precio justo' donde la logística y el costo de transporte son críticos; abastece 600 locales y despacha a domicilio en 34 comunas urbanas + 18 rurales de la RM con plazos 24-48h. Alta sensibilidad al costo por km.",
+  "beneficio_ev48": "La EV48 baja el costo logístico por entrega (clave en su propuesta de precio justo) en reabastecimiento de locales y despacho domiciliario urbano RM repetitivo; menor combustible y mantenimiento alinean con su foco en eficiencia de costos.",
+  "decisores_titulos": [
+   "Gerente de Logística / Cadena de Suministro",
+   "Gerente de Operaciones",
+   "Jefe de Transporte y Distribución",
+   "Gerente de E-commerce / Despacho",
+   "Gerente de Expansión"
+  ],
+  "senales": [
+   "600 locales en Chile (segunda mayor en puntos de venta)",
+   "Dos centros de distribución en Santiago + bodega de tránsito en Concepción",
+   "Despacho a domicilio en 34 comunas urbanas RM + 18 rurales, 24-48h",
+   "La logística declarada como clave para 'medicamentos a precio justo'",
+   "Apertura de segunda bodega logística para fortalecer distribución"
+  ],
+  "vans_estimadas": "30-100 vehículos de reabastecimiento de locales y despacho domiciliario urbano RM",
+  "veh_estimados": "100-300 vehículos considerando reposición a 600 locales + despacho",
+  "dato_calidad": "investigado",
+  "justificacion": "Cadena en fuerte expansión (600 locales), 2 CDs en Santiago RM, con reparto urbano repetitivo a locales y despacho domiciliario en 34 comunas RM. Propuesta de valor centrada en costo hace la EV48 muy atractiva. Sin EVs aún (greenfield). Encaje alto en flota de última milla RM.",
+  "fuentes": [
+   "https://www.revistalogistec.com/empresas/perfil/5784-dr-simi-la-logistica-es-clave-para-ofrecer-medicamentos-a-precio-justo"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Transfarma (Transportes Farmacéuticos)",
+  "industria": "Transporte y distribución farmacéutica especializada",
+  "nivel": 1,
+  "ubicacion": "Américo Vespucio 1385, bodegas 41-44, Spacioflex, Quilicura, Región Metropolitana, Santiago",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Opera courier 24 horas en la RM con furgones de última milla con control de temperatura online a hospitales, clínicas y farmacias. Flota de combustión con costos crecientes y necesidad de diferenciarse en sostenibilidad ante clientes de salud.",
+  "beneficio_ev48": "La EV48 con su carga útil y autonomía urbana cubre rutas RM repetitivas 24h con menor costo operativo y emisiones; mejora propuesta de valor 'cadena de frío + sostenibilidad' frente a clientes hospitalarios. Greenfield EV: primer mover.",
+  "decisores_titulos": [
+   "Gerente General / Dueño",
+   "Gerente de Operaciones",
+   "Jefe de Flota y Última Milla",
+   "Encargado de Calidad / Cadena de Frío"
+  ],
+  "senales": [
+   "Flota declarada de camiones de recogida, troncales y furgones de última milla",
+   "Distribución courier 24h en RM con vehículos exclusivos de 6 a 11 m3",
+   "Control de temperatura online NT147/NT208",
+   "Innovación en candado inteligente y digitalización en última milla (apetito tecnológico)"
+  ],
+  "vans_estimadas": "30-100 furgones de última milla RM (estimación según escala de operación 24h)",
+  "veh_estimados": "30-100 vehículos totales (recogida, troncal y última milla)",
+  "dato_calidad": "investigado",
+  "justificacion": "Operador especializado de transporte farmacéutico con base en Quilicura RM y última milla urbana 24h intensiva. Sin evidencia de EVs aún (greenfield, primer mover). Empresa ágil con decisión rápida y apetito tecnológico: encaje alto para piloto y conversión de flota con EV48.",
+  "fuentes": [
+   "https://transfarma.cl/servicios/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Clínica INDISA",
+  "industria": "Salud privada (clínica + centros médicos)",
+  "nivel": 2,
+  "ubicacion": "Clínica matriz en Providencia y Centro INDISA Maipú, RM",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Operación multi-sede (Providencia + Maipú) y unidad de toma de muestras generan traslado urbano de muestras, insumos y personal entre recintos; el grupo está en expansión (compra de CLC) lo que aumenta la necesidad de logística inter-sede.",
+  "beneficio_ev48": "EV48 para traslado de muestras e insumos entre Providencia y Maipú y soporte a servicios ambulatorios, con costo operativo bajo y mensaje ESG en una clínica que se posiciona hacia ABC1.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Administración y Finanzas",
+   "Jefe de Abastecimiento / Logística",
+   "Jefe de Servicios Generales",
+   "Gerente de Sostenibilidad"
+  ],
+  "senales": [
+   "Centros en Providencia y Maipú con unidad de toma de muestras",
+   "Controladores junto a EuroAmerica adquirieron 55,75% de Clínica Las Condes (2025), señal de expansión y caja",
+   "Publicación de memorias anuales a inversionistas",
+   "Propiedad independiente (grupo Pérez/Selume/Guzmán), no Banmédica"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Clínica sólida, independiente de Banmédica (solo figura como prestador de la isapre), con operación urbana multi-sede en la RM y greenfield EV. Flota propia más acotada que las mutualidades, por eso nivel 2; acceso alto por organigrama corporativo claro.",
+  "veh_estimados": "30-100 entre vehículos de logística inter-sede, muestras y administración",
+  "vans_estimadas": "Pocas vans/furgones de traslado de muestras e insumos en la RM",
+  "fuentes": [
+   "https://www.cnnchile.com/pais/las-millonarias-cifras-tras-la-venta-de-clinica-las-condes-clinica-indisa-y-euroamerica-son-los-nuevos-duenos_20250111/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Agricola Don Pollo",
+  "industria": "Proteina avicola (pollo)",
+  "nivel": 1,
+  "ubicacion": "Planta y terminal en La Pintana, Región Metropolitana (terminales en principales ciudades)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Reparto refrigerado diario desde su planta en La Pintana (RM) a supermercados, carnicerias, mayoristas y HORECA; mantiene terminales propias y flota de reparto que opera rutas urbanas intensivas en Santiago, con presion de costos operativos.",
+  "beneficio_ev48": "EV48 reduce costo por km en rutas urbanas repetitivas de reparto avicola en la RM, con recarga nocturna en planta La Pintana y cero emisiones locales para abastecimiento temprano en zonas urbanas densas.",
+  "decisores_titulos": [
+   "Gerente de Distribucion / Logistica",
+   "Jefe de Transporte y Flota",
+   "Gerente de Operaciones",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Tercer actor relevante de la industria del pollo en Chile",
+   "Capacidad productiva ~450.000 pollos/semana",
+   "Planta y terminal de distribucion en La Pintana (RM)",
+   "Terminales propios en principales ciudades del pais con infraestructura propia"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 1: productor avicola con planta y terminal de distribucion en la RM (La Pintana), flota propia y reparto urbano intensivo a multiples canales. Greenfield EV con alto potencial. ESG bajo por falta de evidencia de reporte/metas; eso lo separa del top absoluto pero el encaje operativo es fuerte.",
+  "fuentes": [
+   "https://agricoladonpollo.com/puntos-de-distribucion/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Farmacias Knop (Knop Laboratorios)",
+  "industria": "Retail farmacéutico natural/homeopático y laboratorio",
+  "nivel": 2,
+  "ubicacion": "Casa matriz Providencia, Santiago, RM (laboratorio en Región de Valparaíso); ~70-80 locales nacionales",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "alto",
+  "fin_level": "media",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Reabastece ~70-80 locales propios y maneja despacho desde laboratorio; flota de combustión choca con su posicionamiento de sostenibilidad (empaques reciclables, energía solar). Necesita coherencia ESG en su logística.",
+  "beneficio_ev48": "La EV48 cierra la brecha de coherencia ESG: una flota eléctrica para reposición urbana de locales y despacho refuerza directamente su marca 'natural/sostenible' líder en cuidado del medioambiente y reduce costos.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones / Logística",
+   "Gerente de Sostenibilidad",
+   "Gerente de Retail / Locales",
+   "Jefe de Distribución"
+  ],
+  "senales": [
+   "Reconocida por estudios (Better Brands / B Brands) por cuidado del medioambiente",
+   "Primera empresa en Chile conectada en media tensión con planta solar propia",
+   "Migración a empaques reciclables y biodegradables; cadena sin bolsas plásticas",
+   "Marca con propósito de sostenibilidad desde 1931, fuerte fit narrativo EV"
+  ],
+  "vans_estimadas": "<30 vehículos de reposición urbana de locales y despacho (estimación)",
+  "veh_estimados": "<30 vehículos propios; parte del despacho vía courier",
+  "dato_calidad": "investigado",
+  "justificacion": "Cadena natural/homeopática con casa matriz en RM y ESG líder (solar, empaques reciclables) que hace la EV48 muy alineada a su marca. Flota pequeña y operación distribución mixta limitan volumen, pero apetito y acceso son altos. Greenfield EV. Nivel 2 por escala de flota.",
+  "fuentes": [
+   "https://laquintaemprende.cl/2024/12/knop-laboratorio-el-legado-sostenible-de-una-empresa-que-nacio-en-la-region-y-hoy-sigue-creciendo-con-proposito/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "DUOC UC",
+  "industria": "Educación técnico-profesional (instituto profesional y CFT)",
+  "nivel": 2,
+  "ubicacion": "RM: sedes Alameda, Antonio Varas (Providencia), Maipú, Plaza Oeste (Cerrillos), Plaza Vespucio (La Florida), Plaza Norte, Padre Alonso de Ovalle",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Con múltiples sedes en la RM necesita traslados administrativos, logística interna y soporte entre campus en recorridos urbanos; tras medir su huella de carbono (2022) y declarar política de sostenibilidad, busca acciones concretas de reducción que hoy no cubre su flota.",
+  "beneficio_ev48": "EV48 para circuitos inter-sedes y servicios urbanos cortos en la RM con recarga nocturna por sede, aportando reducción medible de emisiones que alimenta directamente su línea base de huella de carbono y Política de Sostenibilidad.",
+  "decisores_titulos": [
+   "Vicerrector(a) Económico y de Gestión",
+   "Director(a) de Operaciones / Infraestructura",
+   "Encargado(a) de Sostenibilidad institucional",
+   "Jefe(a) de Servicios Generales"
+  ],
+  "senales": [
+   "Múltiples sedes en la RM (alta movilidad inter-campus)",
+   "Medición de huella de carbono iniciada en 2022 (línea base GEI)",
+   "Política Institucional de Sostenibilidad vigente",
+   "Participación en Red Campus Sustentable"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Amplio footprint de sedes en la RM con necesidad de movilidad urbana y un marco de sostenibilidad con huella ya medida que demanda acciones de reducción; greenfield EV. Acceso algo más difuso por estructura institucional grande.",
+  "vans_estimadas": "3-6 unidades de servicio/logística inter-sedes",
+  "veh_estimados": "Flota de servicios generales moderada repartida en sedes RM",
+  "fuentes": [
+   "https://www.duoc.cl/wp-content/uploads/2022/09/Sostenibilidad-Duoc-UC_team-briefing-6-sept.pdf"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Frontel (Grupo Saesa)",
+  "industria": "Distribución eléctrica",
+  "nivel": 3,
+  "ubicacion": "Provincias de Concepción (Biobío) y Cautín (La Araucanía)",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "alta",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Brigadas de emergencia y cuadrillas de distribución que cubren zonas urbanas (Temuco, Concepción) y rurales; herencia del plan de electrificación de flota del Grupo Saesa pero con operación fuera de la RM.",
+  "beneficio_ev48": "Para cuadrillas en cascos urbanos de Temuco/Concepción la EV48 reduce costos y emisiones; se beneficia del know-how de electrificación del Grupo Saesa, aunque su zona mixta urbano-rural y la lejanía de la RM limitan el ajuste.",
+  "decisores_titulos": [
+   "Gerente de Operaciones de Distribución",
+   "Jefe de Flota (Grupo Saesa)",
+   "Gerente de Sostenibilidad",
+   "Jefe de Adquisiciones"
+  ],
+  "senales": [
+   "+314.000 clientes en Biobío y Araucanía",
+   "Filial del Grupo Saesa, líder en flota eléctrica del sur",
+   "Brigadas de emergencia y respuesta de terreno"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: 15-40 vehículos de servicio urbano",
+  "veh_estimados": "Estimación: varias decenas de vehículos de cuadrilla",
+  "justificacion": "Distribuidora con cuadrillas y brigadas reales, respaldada por el plan de electrificación del Grupo Saesa, pero opera fuera de la RM en zona mixta urbano-rural. Nivel 3; misma decisión de flota probablemente centralizada en el grupo (relacionada con la entrada de Saesa).",
+  "fuentes": [
+   "https://es.wikipedia.org/wiki/Sociedad_Austral_de_Electricidad_Sociedad_An%C3%B3nima"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Colún (Cooperativa Agricola y Lechera de La Union)",
+  "industria": "Consumo masivo (lacteos y alimentos)",
+  "nivel": 2,
+  "ubicacion": "Centros de distribucion en San Bernardo y Lampa, Región Metropolitana (oficina de ventas Santiago)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Distribucion de lacteos refrigerados desde sus CD de la RM (San Bernardo/Lampa) hacia el Gran Santiago con rutas urbanas repetitivas y cadena de frio; flota a combustion sin iniciativas EV visibles, con presion de costos y futuras exigencias de descarbonizacion.",
+  "beneficio_ev48": "La EV48 permite electrificar el reparto urbano refrigerado de corto radio en el Gran Santiago desde sus nuevos CD, reduciendo costo operativo y emisiones en zonas urbanas con restricciones crecientes; greenfield sin competidores EV instalados.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Jefe de Transporte y Flota",
+   "Gerente de Operaciones RM",
+   "Subgerente de Cadena de Suministro"
+  ],
+  "senales": [
+   "Nuevo centro de almacenamiento y distribucion en San Bernardo (US$28M, 18.000 m2 con areas refrigeradas) para el Gran Santiago",
+   "Centro logistico y oficinas en Parque Industrial Valle Grande, Lampa",
+   "Mayor empresa lactea de capitales 100% chilenos, +300 productos",
+   "Oficina de ventas y distribucion en Santiago"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Lactea grande con inversion reciente en CD propios en la RM dedicados al Gran Santiago y reparto urbano refrigerado repetitivo. Greenfield EV: oportunidad de entrada temprana con EV48.",
+  "veh_estimados": "100-300 (distribucion nacional, nucleo RM relevante)",
+  "vans_estimadas": "30-80 vehiculos de reparto urbano RM",
+  "fuentes": [
+   "http://www.qyb.cl/obra/colun-centro-de-distribucion/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Coexca",
+  "industria": "Proteina porcina (cerdo)",
+  "nivel": 3,
+  "ubicacion": "Plantas en San Rafael y region del Maule / Biobio (distribucion nacional, CDs incl. RM)",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Modelo verticalmente integrado con plantas en el Maule; la carne llega a centros de distribucion mayoristas/minoristas y luego a reparto urbano. El tramo interurbano (Maule-RM) domina la logistica, con reparto urbano en destino.",
+  "beneficio_ev48": "EV48 calza para el reparto urbano final en la RM desde CDs de Coexca a clientes HORECA y minoristas; el transporte primario interurbano refrigerado no es el caso de uso de la van.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Gerente de Operaciones",
+   "Jefe de Flota / Transporte",
+   "Gerente de Sostenibilidad"
+  ],
+  "senales": [
+   "Lider chileno en carne de cerdo con modelo integrado (crianza-faena-logistica-distribucion)",
+   "Tres plantas industriales con energias renovables; planta en San Rafael (Maule)",
+   "Comercializa en Chile (marcas Campo Noble y Mayoral) y ~30 mercados",
+   "Plantas usan energia renovable (senal ESG)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 3: productor de proteina con plantas en el Maule (no RM); distribucion mixta con tramo interurbano dominante. foco_rm=false. ESG medio (plantas con renovables). Fit EV limitado al reparto urbano en destino.",
+  "fuentes": [
+   "https://www.coexca.cl/quienes-somos/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "DirecTV Chile (DTV / SKY)",
+  "industria": "Telecomunicaciones / TV satelital e ISP fibra y satelital",
+  "nivel": 2,
+  "ubicacion": "Operación nacional con base comercial en Santiago (RM); fibra disponible en varias comunas/regiones",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Instalaciones domiciliarias de antenas satelitales y fibra requieren cuadrillas con camionetas circulando por comunas de la RM; rutas urbanas de instalación/visita técnica con vehículos a combustión y costos operativos asociados.",
+  "beneficio_ev48": "EV48 como van de cuadrilla de instalación/visita técnica en zonas urbanas de la RM, con menor costo por kilómetro en rutas de paradas frecuentes y aporte a metas de sostenibilidad corporativa regional.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Field Services / Instalaciones",
+   "Gerente de Logística",
+   "Gerente de Compras"
+  ],
+  "senales": [
+   "Lanzó servicio de internet por fibra en Chile (2023) disponible en múltiples comunas/regiones, sumando a su base de TV satelital",
+   "Avanza hacia conectividad satelital de banda ancha (constelación LEO) con Chile entre los primeros mercados",
+   "Ofrece planes de internet fibra desde ~$23.000 en 11 comunas, lo que implica despliegue de cuadrillas de instalación"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: telco con instalaciones domiciliarias (satelital + fibra) y cuadrillas en comunas RM, respaldo financiero alto y greenfield EV, pero su flota de servicio es más acotada y dispersa nacionalmente, con ESG bajo y operación menos concentrada en última milla/servicio urbano RM que GTD o Mundo.",
+  "fuentes": [
+   "https://www.theclinic.cl/2023/10/13/directv-anuncia-lanzamiento-de-su-servicio-de-internet-estara-disponible-en-seis-regiones-del-pais/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Aguas Antofagasta S.A. (Grupo EPM)",
+  "industria": "Servicios sanitarios (produccion y distribucion de agua potable, desalacion, alcantarillado y tratamiento)",
+  "nivel": 3,
+  "ubicacion": "Region de Antofagasta (Antofagasta, Calama, Tocopilla, Mejillones, Taltal); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "muy_alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "medio",
+  "dolor": "Operacion sanitaria en ciudades del norte (clima desertico) con cuadrillas de mantencion, lectura y atencion que recorren cascos urbanos de Antofagasta, Calama y Tocopilla. Costo de combustible y emisiones de flota de terreno; controlador EPM con agenda de sostenibilidad y electromovilidad declarada.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas urbanas en ciudades del norte, alineadas con la estrategia de electromovilidad del Grupo EPM (que ya opera flotas EV en Colombia). Reduce costo por km y huella reportable. Buena recarga por flota con bases fijas. Fuera de RM.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente / Lider de Sostenibilidad",
+   "Jefe de Flota y Transporte",
+   "Gerente de Abastecimiento",
+   "Gerente General"
+  ],
+  "senales": [
+   "Filial del Grupo EPM (Empresas Publicas de Medellin), respaldo financiero muy alto",
+   "Pionera en desalacion para consumo humano en LatAm (perfil de innovacion/ESG)",
+   "Grupo EPM con informe de sostenibilidad 2024 y trayectoria en flotas EV",
+   "Operacion urbana en multiples ciudades de la region de Antofagasta"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Gran sanitaria con flota mediana de servicio urbano, pero fuera de la RM (foco_rm=false). ESG alto y fin_level muy_alta por pertenecer a la utility EPM. Acceso alto (estructura corporativa clara). Adopcion media con buena predisposicion por agenda EV del grupo; competidor_ev parcial porque EPM ya tiene experiencia EV y referencias sectoriales. potencial_elect medio por escala y apetito, limitado por ubicacion fuera de RM. Lead corporativo solido pero geograficamente no-RM.",
+  "fuentes": [
+   "https://www.grupo-epm.com/content/dam/Grupo-Epm/aguas-regionales/institucional/informes-de-sostenibilidad/informe-de-sostenibilidad-2024.pdf"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Universidad Mayor",
+  "industria": "Educación superior (universidad privada)",
+  "nivel": 1,
+  "ubicacion": "RM: Campus Huechuraba y Campus Manuel Montt (Providencia), Santiago",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Operan buses de acercamiento gratuitos en rutas urbanas fijas y repetitivas (Escuela Militar y Vespucio Norte hacia Campus Huechuraba), hoy con flota diésel tercerizada y costo operacional creciente; necesitan cumplir metas de descarbonización ya iniciadas (energía 100% renovable en 3 campus).",
+  "beneficio_ev48": "La EV48 reemplaza buses/vans de acercamiento en circuitos cortos metro-campus con TCO menor (energía vs diésel), cero emisiones que refuerzan su narrativa de campus renovable, y coberturas predecibles ideales para recarga nocturna en el estacionamiento de Huechuraba.",
+  "decisores_titulos": [
+   "Vicerrector(a) de Administración y Finanzas",
+   "Director(a) de Operaciones / Infraestructura y Campus",
+   "Encargado(a) de Sostenibilidad / Campus Sustentable",
+   "Jefe(a) de Servicios Estudiantiles (transporte)"
+  ],
+  "senales": [
+   "Buses de acercamiento gratuitos en rutas fijas metro-campus",
+   "3 campus con energía eléctrica 100% renovable en 2022 (evita ~756 t CO2/año)",
+   "Alianza con plan declarado de incorporar buses eléctricos para transporte estudiantil",
+   "Campus Huechuraba con amplio estacionamiento apto para recarga"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Mejor encaje del segmento: ya corre rutas urbanas repetitivas (acercamiento), tiene metas de descarbonización activas y un plan declarado de electrificar transporte estudiantil; flota tercerizada facilita un piloto de reemplazo con EV48.",
+  "vans_estimadas": "4-8 unidades para acercamiento/servicio entre campus y estaciones de metro",
+  "veh_estimados": "Flota de acercamiento tercerizada (varios buses) + vehículos de servicio interno; nivel mediano de movilidad",
+  "fuentes": [
+   "https://diariomayor.cl/index.php?id=5369&option=com_content&view=article"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Cecinas San Jorge (Cial Alimentos)",
+  "industria": "Cecinas y carnes procesadas refrigeradas",
+  "nivel": 2,
+  "ubicacion": "Planta en Pudahuel, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Distribucion refrigerada de cecinas desde su planta en Pudahuel (RM) a supermercados, almacenes y HORECA; reparto urbano frecuente que requiere mantener cadena de frio en rutas cortas y repetitivas dentro de Santiago.",
+  "beneficio_ev48": "EV48 cubre el reparto urbano de cecinas desde Pudahuel hacia el resto de la RM con menor costo operativo y cero emisiones locales; rutas predecibles permiten recarga nocturna y planificacion simple de autonomia.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Jefe de Flota / Transporte",
+   "Gerente de Operaciones",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Planta principal en Av. Americo Vespucio Norte, Pudahuel (RM)",
+   "Marca tradicional de cecinas con presencia nacional en retail",
+   "Operacion refrigerada con reparto a multiples puntos de venta",
+   "Sociedad inscrita historicamente en registro de valores (CMF)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: planta de cecinas en la RM (Pudahuel) con reparto urbano refrigerado, buen encaje operativo, pero menor escala/visibilidad financiera y ESG bajo. Greenfield EV. RM-first.",
+  "fuentes": [
+   "https://www.mercantil.com/empresa/cial-alimentos-cecinas-san-jorge/pudahuel/300000611/eng/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Chilquinta Energía",
+  "industria": "Distribución eléctrica",
+  "nivel": 2,
+  "ubicacion": "Región de Valparaíso (Valparaíso, Viña, Quilpué, San Antonio, Los Andes)",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Cuadrillas de servicio técnico y atención de red en zona de concesión urbana densa (Gran Valparaíso); renueva su flota corporativa a eléctrica y necesita vehículos de servicio de mayor capacidad de carga.",
+  "beneficio_ev48": "La EV48 complementa autos eléctricos ya existentes aportando capacidad de carga para herramientas/materiales de cuadrillas en recorridos urbanos repetitivos del Gran Valparaíso, alineado con su red de electrolineras propias.",
+  "decisores_titulos": [
+   "Gerente de Operaciones / Distribución",
+   "Jefe de Flota",
+   "Gerente de Sostenibilidad",
+   "Jefe de Abastecimiento"
+  ],
+  "senales": [
+   "Renovación de flota corporativa con vehículos 100% eléctricos",
+   "Diez puntos de carga propios en su zona de concesión",
+   "Primera electrolinera de Valparaíso; estudio de tarifas para electromovilidad"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: 10-30 vehículos de servicio urbano",
+  "veh_estimados": "Estimación: flota de servicio de varias decenas",
+  "justificacion": "Distribuidora EV-forward con operación urbana densa y greenfield para vans, pero está en Valparaíso (fuera_rm). Buen ajuste operacional pero no RM-first; nivel 2.",
+  "fuentes": [
+   "https://www.electricas.cl/chilquinta-inaugura-la-primera-electrolinera-de-valparaiso/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Clínica Universidad de los Andes (UANDES)",
+  "industria": "Salud privada (clínica universitaria)",
+  "nivel": 2,
+  "ubicacion": "Las Condes (San Carlos de Apoquindo), RM; servicios domiciliarios en comunas del sector oriente",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Unidad de hospitalización domiciliaria, enfermería a domicilio y toma de muestras a domicilio en Las Condes, Vitacura, Lo Barnechea, La Reina y Providencia generan rutas urbanas repetitivas diarias de personal clínico y muestras.",
+  "beneficio_ev48": "EV48 como móvil de atención domiciliaria (hospitalización en casa, enfermería, toma de muestras) en el sector oriente, reforzando su compromiso público con reciclaje y sostenibilidad.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Atención Domiciliaria / Hospitalización Domiciliaria",
+   "Jefe de Laboratorio",
+   "Gerente de Sostenibilidad",
+   "Jefe de Servicios Generales"
+  ],
+  "senales": [
+   "Unidad de Hospitalización Domiciliaria con toma de muestras",
+   "Toma de muestras a domicilio en Las Condes, Vitacura, Lo Barnechea, La Reina y Providencia",
+   "Servicios de enfermería a domicilio",
+   "Compromiso público con sostenibilidad y reciclaje (673 t de residuos desviados en 2024)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaje claro de servicio urbano domiciliario en comunas del oriente de la RM y greenfield EV. Flota propia más pequeña y enfocada en domiciliario, por eso nivel 2; acceso medio por gobernanza universitaria/Opus Dei algo menos transaccional.",
+  "veh_estimados": "30-100 entre móviles domiciliarios, muestras y vehículos de apoyo",
+  "vans_estimadas": "Pocas vans/móviles de atención y toma de muestras a domicilio en la RM",
+  "fuentes": [
+   "https://www.clinicauandes.cl/servicios-y-unidades/laboratorio"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Essbio S.A.",
+  "industria": "Servicios sanitarios (agua potable, alcantarillado y tratamiento de aguas servidas)",
+  "nivel": 2,
+  "ubicacion": "Regiones de O'Higgins, Nuble y Biobio (sede Concepcion); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "medio",
+  "dolor": "Mas de 740.000 clientes en ciudades de O'Higgins, Nuble y Biobio (Rancagua, Chillan, Concepcion, etc.) atendidos con cuadrillas tecnicas y vehiculos de servicio que recorren redes urbanas a diario. Costo operativo de combustible y mantencion en flota de terreno, con presion ESG creciente de su controlador institucional.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas de mantencion, lectura y atencion de clientes en cascos urbanos de sus ciudades de concesion (recorridos cortos y repetitivos). Reduce huella de carbono reportable, alinea con sus metas de sostenibilidad y baja costo por km. No-RM, por lo que el despliegue seria fuera de Santiago salvo casas matrices/areas administrativas.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Sostenibilidad / Medio Ambiente",
+   "Jefe de Flota y Logistica",
+   "Gerente de Abastecimiento / Compras",
+   "Gerente General"
+  ],
+  "senales": [
+   "Controlada por Ontario Teachers' Pension Plan (respaldo financiero institucional)",
+   "18 reportes de sostenibilidad publicados; estrategia ESG formal",
+   "~740.000 clientes en 3 regiones; presta gestion tambien a Nuevosur (Maule)",
+   "Cuadrillas de emergencia y mantencion en multiples ciudades"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Gran sanitaria con flota mediana de servicio urbano, pero opera fuera de la RM (foco_rm=false, urbano_level=fuera_rm). ESG alto por reporte consolidado y metas. fin_level alta por respaldo de Ontario Teachers'. Acceso alto: organigrama corporativo claro y vocerias. Adopcion media (apetito ESG vs. inercia operativa). competidor_ev parcial dado que Aguas Andinas ya lidera la electrificacion de flotas sanitarias en Chile y marca referencia sectorial. Lead solido pero geograficamente fuera de RM.",
+  "fuentes": [
+   "https://www.elrancaguino.cl/2024/08/27/essbio-lanza-en-rancagua-su-nuevo-reporte-de-sostenibilidad/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Aguas Araucania S.A. (Grupo Aguas Nuevas)",
+  "industria": "Servicios sanitarios (agua potable, alcantarillado y tratamiento de aguas servidas)",
+  "nivel": 3,
+  "ubicacion": "Region de La Araucania (Temuco y comunas); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Atiende ~256.000 clientes (poblacion ~1M) en La Araucania con procesos de mantencion electromecanica, produccion y depuracion que requieren cuadrillas y vehiculos de servicio recorriendo redes urbanas de Temuco y ciudades de la region a diario.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas de mantencion electromecanica y atencion urbana en Temuco y alrededores, reduciendo combustible y emisiones, alineado con su narrativa 'ser sostenibles esta en nuestra naturaleza' y sistema de gestion integrado certificado. Fuera de RM.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Mantenimiento Electromecanico",
+   "Encargado de Sostenibilidad / Gestion Integrada",
+   "Jefe de Flota",
+   "Gerente de Abastecimiento"
+  ],
+  "senales": [
+   "~256.000 clientes; cobertura agua potable 99,6%",
+   "Sistema de Gestion Integrado certificado (ISO); memoria de sostenibilidad anual",
+   "Pertenece al grupo Aguas Nuevas (junto a Altiplano, Magallanes, Decima, Nueva Atacama)",
+   "Inversiones en aducciones y redes en Temuco"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Sanitaria mediana con flota de servicio urbano y gestion integrada certificada, pero fuera de la RM (foco_rm=false). ESG alto por reporte y metas; fin_level alta por grupo Aguas Nuevas. Acceso alto. Adopcion media; competidor_ev ninguno (greenfield). potencial_elect medio. Nivel 3 por encaje geografico fuera de RM aunque buen perfil operativo y ESG.",
+  "fuentes": [
+   "https://www.aguasaraucania.cl/recursos-ara/Memorias/MEMORIA%20AGUAS%20ARAUCANIA%202024.pdf"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "VSPT Wine Group (Viña San Pedro Tarapaca)",
+  "industria": "Bebidas (vinos)",
+  "nivel": 3,
+  "ubicacion": "Operaciones y bodegas en la Región Metropolitana (Isla de Maipo) y Molina; casa matriz Santiago",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "interurbano",
+  "esg_level": "lider",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "parcial",
+  "potencial_elect": "medio",
+  "dolor": "Operacion vitivinicola mayormente interurbana/exportadora con bodegas en Isla de Maipo y Molina; la distribucion domestica a retail y HORECA en la RM tiene rutas urbanas repetitivas pero menores frente al peso del transporte de carretera y exportacion.",
+  "beneficio_ev48": "La EV48 cubre el reparto urbano domestico en Santiago y traslados internos en sus instalaciones RM, sumando a su objetivo de carbono neutralidad 2040 en los tres alcances con un vehiculo limpio para rutas cortas repetitivas.",
+  "decisores_titulos": [
+   "Gerente de Sustentabilidad",
+   "Gerente de Logistica / Supply Chain",
+   "Jefe de Transporte / Flota",
+   "Gerente de Operaciones"
+  ],
+  "senales": [
+   "Meta de carbono neutralidad en los 3 alcances a 2040 (IWCA), pionero en sustentabilidad como objetivo estrategico",
+   "Lider en generacion de energia renovable; instalaciones en Isla de Maipo (RM) abastecidas con energia renovable de Colbun",
+   "Segundo mayor exportador de vino de Chile, lider domestico en vino fino embotellado",
+   "Incorporacion de camiones con combustible verde a su flota de transporte"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Lider ESG con instalaciones en la RM (Isla de Maipo) y distribucion domestica urbana, pero perfil dominante interurbano/exportador y senales EV limitadas a camiones de combustible verde. Encaje medio-bajo, incluido como prospecto de nivel 3.",
+  "veh_estimados": "30-100 (flota mixta; tramo urbano RM acotado)",
+  "vans_estimadas": "10-30 vehiculos de reparto urbano domestico RM",
+  "fuentes": [
+   "https://www.ccu.cl/colbun-suministrara-energia-electrica-renovable-a-plantas-y-centros-de-distribucion-de-ccu/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Cecinas Llanquihue",
+  "industria": "Cecinas y embutidos refrigerados",
+  "nivel": 2,
+  "ubicacion": "Centro de Distribucion en Quilicura, Región Metropolitana (planta en Llanquihue, Los Lagos)",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Su CD en Quilicura abastece el mercado de Santiago con productos refrigerados que viajan desde el sur; el reparto de ultima milla en la RM es urbano, frecuente y sensible a cadena de frio, con costos de flota relevantes para una empresa familiar.",
+  "beneficio_ev48": "EV48 permite electrificar el reparto urbano de cecinas en la RM desde el CD de Quilicura, bajando costos operativos y reforzando el posicionamiento de marca premium/tradicional con una flota mas limpia.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones / Logistica",
+   "Jefe de Distribucion y Flota",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Centro de distribucion en Av. Central 100, Quilicura (RM)",
+   "Empresa familiar tradicional (fundada 1935) con marca premium",
+   "Distribucion refrigerada a retail y almacenes en Santiago",
+   "Operacion concentrada para abastecer la RM desde el sur"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: CD propio en la RM (Quilicura) con reparto urbano refrigerado; flota mas pequena y empresa familiar de tamano medio. Acceso a decisores alto (organizacion familiar/PYME, decision concentrada). Greenfield EV.",
+  "fuentes": [
+   "https://www.mercantil.com/empresa/cecinas-llanquihue/quilicura/300111133/esp/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Construmart S.A.",
+  "industria": "Retail materiales de construccion y mejoramiento del hogar",
+  "nivel": 1,
+  "ubicacion": "RM (CD y varias tiendas en Santiago; ~40 tiendas a nivel nacional)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "mixto",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Despacho diario de materiales de construccion a obras, ferreterias y hogares en RM con rutas urbanas y peri-urbanas repetitivas; costos de combustible y mantencion elevados en flota diesel.",
+  "beneficio_ev48": "La EV48 atiende rutas urbanas RM de reparto a clientes B2C y pedidos B2B de menor tonelaje con costo operativo bajo, ideal para tramos urbanos repetitivos de su distribucion mixta.",
+  "decisores_titulos": [
+   "Gerente de Logistica y Distribucion",
+   "Jefe de Transporte / Flota",
+   "Gerente de Operaciones",
+   "Subgerente de Abastecimiento"
+  ],
+  "senales": [
+   "~40 tiendas a nivel nacional con presencia y CD en RM (Quilicura)",
+   "Canal de venta a empresas (B2B) ademas de retail",
+   "Despacho propio en RM de lunes a viernes con ventanas horarias definidas"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Cadena de materiales de construccion consolidada con operacion de despacho en RM y mezcla urbano/peri-urbano. Greenfield en EV (sin señales de electromovilidad) lo hace atractivo, aunque su agenda ESG visible es baja y parte de la carga es pesada, por eso flota_band mediana y urbano_level distribucion_mixta.",
+  "fuentes": [
+   "https://www.df.cl/empresas/construmart-inaugura-dos-nuevos-locales-y-alcanza-40-tiendas-en-el-pais"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Imperial S.A.",
+  "industria": "Distribucion de tableros de madera, ferreteria y terminaciones para mueblistas y construccion",
+  "nivel": 1,
+  "ubicacion": "La Granja, Santiago, RM (casa matriz + CD); ~13-15 tiendas en Chile",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Reparto de tableros, herrajes y materiales a mueblistas, carpinteros y obras en RM con multiples paradas urbanas diarias; flota diesel con costos crecientes y exposicion a restricciones urbanas.",
+  "beneficio_ev48": "La EV48 cubre el reparto urbano RM a clientes mueblistas/ferreteros (cargas medianas, rutas repetitivas intra-Santiago) con cero emisiones y menor costo por km que su flota diesel.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Jefe de Flota y Transporte",
+   "Gerente de Operaciones",
+   "Subgerente Comercial B2B"
+  ],
+  "senales": [
+   "Casa matriz y centro de distribucion en La Granja (RM)",
+   "~13-15 tiendas de 5a a 9a Region con base operativa en RM",
+   "Modelo B2B con reparto propio a mueblistas y constructoras"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Distribuidor con base logistica fuerte en RM (La Granja) y reparto urbano repetitivo a clientes profesionales. Greenfield EV. Potencial_elect medio porque parte de la carga (tableros) es voluminosa/pesada y puede exceder el rango de una van mediana, pero la ultima milla urbana RM calza bien con la EV48.",
+  "fuentes": [
+   "https://www.imperial.cl/quienes_somos"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Sopraval",
+  "industria": "Proteina avicola (pavo) y alimentos refrigerados",
+  "nivel": 3,
+  "ubicacion": "Planta en La Calera, Region de Valparaiso (distribucion nacional incluida RM)",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "bajo",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Distribucion refrigerada de pavo desde La Calera (Valparaiso) hacia la RM y el resto del pais; combina tramos interurbanos (planta-RM) con reparto urbano en destino, lo que reduce la proporcion de rutas puramente urbanas RM.",
+  "beneficio_ev48": "EV48 puede electrificar el tramo de reparto urbano de Sopraval en la RM (descarga desde CD a puntos de venta), aunque el grueso interurbano La Calera-Santiago requiere otra solucion; mejor fit para flota urbana complementaria.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Jefe de Transporte / Flota",
+   "Gerente de Operaciones",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Mayor productor de pavo de Chile, planta en La Calera (Valparaiso)",
+   "Capacidad de procesar hasta 10 millones de pavos/ano",
+   "Cobertura de distribucion nacional e internacional",
+   "Instalaciones entre La Ligua y Casablanca (Valparaiso)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 3: productor de proteina relevante pero base operativa en Valparaiso, no RM; distribucion mixta (interurbano + urbano). foco_rm=false. El encaje EV se limita al reparto urbano en destino, por eso potencial medio.",
+  "fuentes": [
+   "https://www.sopraval.cl/nosotros/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Universidad Adolfo Ibáñez (UAI)",
+  "industria": "Educación superior (universidad privada)",
+  "nivel": 1,
+  "ubicacion": "RM: Campus Peñalolén (Diagonal Las Torres 2640) y sede Las Condes, Santiago",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "alta",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Campus Peñalolén está en altura y depende intensamente de buses de acercamiento desde varias estaciones de metro (Grecia, Los Dominicos, Fernando Castillo Velasco) en rutas fijas; servicio tercerizado (Buses Hualpén) con flota convencional y alta frecuencia diaria.",
+  "beneficio_ev48": "Vans EV48 para circuitos de acercamiento y conexión inter-campus con recorridos cortos y predecibles, recarga en campus durante la noche, menor costo energético y respaldo a su app AllRide y narrativa de movilidad sostenible (carpooling ya promovido).",
+  "decisores_titulos": [
+   "Director(a) de Operaciones / Campus",
+   "Gerente(a) de Administración y Finanzas",
+   "Encargado(a) de Servicios al Estudiante / Transporte",
+   "Jefe(a) de Sostenibilidad"
+  ],
+  "senales": [
+   "Buses de acercamiento desde 3+ estaciones de metro al Campus Peñalolén",
+   "Servicio Inter-UAI entre sedes",
+   "App AllRide con rutas, paradas y tracking en tiempo real",
+   "Promoción activa de carpooling para reducir flujo vehicular"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Operación de acercamiento intensiva y altamente repetitiva en la RM, sin EVs hoy (greenfield), con apetito digital/sostenible; el campus en altura y rutas fijas son ideales para piloto de vans eléctricas con recarga centralizada.",
+  "vans_estimadas": "4-8 unidades para circuitos de acercamiento e inter-campus",
+  "veh_estimados": "Varias unidades de acercamiento tercerizadas operando en alta frecuencia diaria",
+  "fuentes": [
+   "https://www.uai.cl/campus/buses-de-acercamiento-penalolen"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Netline (Netline Telecomunicaciones Chile / Multicarrier)",
+  "industria": "Telecomunicaciones B2B / ISP empresarial (fibra, inalámbrico, satelital LEO, IoT)",
+  "nivel": 2,
+  "ubicacion": "Casa matriz en Providencia, Santiago (RM); cobertura RM, Valparaíso, O'Higgins, Maule, Biobío, Antofagasta",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Instalaciones y mantención de enlaces dedicados, antenas inalámbricas (NETAir) y equipamiento IoT en clientes empresariales de la RM requieren visitas técnicas con camionetas por toda la ciudad; rutas urbanas recurrentes con costo de combustible.",
+  "beneficio_ev48": "Van eléctrica para las visitas técnicas urbanas de Netline en la RM (clientes corporativos), reduciendo costo operativo y reforzando propuesta de valor tecnológica/sostenible ante clientes B2B.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Servicio Técnico / Field Engineering",
+   "Gerente de Administración y Finanzas",
+   "Encargado de Flota / Logística"
+  ],
+  "senales": [
+   "+25 años en telecomunicaciones, equipo de +100 colaboradores directos, casa matriz en Providencia (RM)",
+   "Servicios B2B: internet dedicado, telefonía IP, IIoT, inalámbrico NETAir y satelital NetSat LEO",
+   "Atiende empresas en RM y varias regiones, con foco en zonas de difícil acceso a fibra"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 2: ISP empresarial con base y operación en la RM, organigrama claro y decisores accesibles (acceso alto), pero flota técnica pequeña (B2B, no última milla masiva) y tamaño financiero medio. Encaje real pero de menor volumen que los líderes.",
+  "fuentes": [
+   "https://www.netline.net/sobre-netline/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Quillayes Surlat",
+  "industria": "Consumo masivo (lacteos: leche, yogurt, quesos)",
+  "nivel": 2,
+  "ubicacion": "Centro de distribucion ENEA, Pudahuel, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Reparto de lacteos refrigerados/congelados desde su CD ENEA (Pudahuel) a puntos de venta del Gran Santiago con rutas urbanas repetitivas y cadena de frio; flota diesel y presupuesto de mediana empresa sensible al costo operativo.",
+  "beneficio_ev48": "La EV48 baja el costo total de propiedad del reparto urbano refrigerado de corto recorrido desde ENEA, con carga nocturna en el CD; sin competidores EV instalados (greenfield) y rutas perfectamente compatibles con su autonomia.",
+  "decisores_titulos": [
+   "Jefe de Transporte de Refrigerados y Congelados",
+   "Planificador de Transporte",
+   "Gerente de Logistica / Distribucion",
+   "Gerente de Operaciones"
+  ],
+  "senales": [
+   "Centro de distribucion ENEA en Pudahuel (RM) con operacion de transporte refrigerado y congelado",
+   "Cargos dedicados de Jefe de Transporte de Refrigerados/Congelados y Planificador de Transporte en Pudahuel",
+   "Fusion Quillayes-Surlat con WMS (Infor) para gestionar su CD en Santiago",
+   "Distribucion multicanal a lo largo de Chile con base logistica en la RM"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Lactea mediana con CD propio en Pudahuel (RM) y reparto urbano refrigerado repetitivo en el Gran Santiago, con organigrama de transporte claro. Greenfield EV de buen encaje para EV48.",
+  "veh_estimados": "30-100 (flota de reparto refrigerado, foco RM)",
+  "vans_estimadas": "20-50 vehiculos de reparto urbano refrigerado",
+  "fuentes": [
+   "https://cl.trabajo.org/oferta-3965-28c13d320b8e0899c90e1212b40f273c"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Urbano Express Chile (Urbano Chile)",
+  "industria": "Courier / logística de última milla y fulfillment",
+  "nivel": 2,
+  "ubicacion": "Av. Kennedy 7686, Santiago, Región Metropolitana (red nacional)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Opera courier/última milla B2B y B2C de Arica a Punta Arenas con fuerte componente urbano en la RM; la distribución mixta (urbano + interurbano) y el reparto urbano de paquetería presionan costos en el tramo metropolitano.",
+  "beneficio_ev48": "La EV48 encaja en su reparto urbano repetitivo en la RM (paquetería e-commerce), donde rutas cortas y previsibles maximizan el ahorro frente a combustión y aportan a una agenda ESG aún incipiente.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Gerente de Flota / Distribución",
+   "Gerente de Last Mile",
+   "Gerente General"
+  ],
+  "senales": [
+   "Operador regional (Chile, Perú, Ecuador, El Salvador, Argentina) con casa matriz RM",
+   "Adquirió Promail (ex courier de Prosegur) al entrar a Chile en 2016",
+   "Ofrece última milla, courier, B2B/B2C, fulfillment y warehousing para retail y e-commerce",
+   "Red de distribución nacional con base operativa en Santiago"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Operador consolidado con flota mediana y fuerte presencia courier/e-commerce en la RM, aunque parte de su operación es interurbana (distribución mixta). Greenfield EV con acceso B2B razonable.",
+  "veh_estimados": "Estimación: flota mediana (100-300 vehículos en operación nacional)",
+  "vans_estimadas": "Furgones y vehículos de reparto urbano; share importante en la RM",
+  "fuentes": [
+   "https://urbanoexpress.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Universidad San Sebastián (USS)",
+  "industria": "Educación superior (universidad privada)",
+  "nivel": 3,
+  "ubicacion": "RM: sede Santiago (Campus Bellavista en Recoleta y Campus Los Leones en Providencia)",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Sede Santiago con dos campus urbanos (Bellavista y Los Leones, ~64.585 m²) que requieren traslado de personal, valija y servicios entre edificios y campos clínicos en recorridos urbanos cortos; flota propia reducida y a combustión.",
+  "beneficio_ev48": "EV48 para logística y servicios urbanos entre campus y campos clínicos en la RM, con recorridos cortos predecibles aptos para recarga en campus y ahorro de combustible; refuerza una agenda de sostenibilidad aún incipiente.",
+  "decisores_titulos": [
+   "Director(a) de Operaciones de Sede",
+   "Gerente(a) de Administración y Finanzas",
+   "Jefe(a) de Servicios Generales",
+   "Encargado(a) de Sostenibilidad"
+  ],
+  "senales": [
+   "Dos campus urbanos en la RM (Bellavista y Los Leones, ~64.585 m²)",
+   "Campos clínicos asociados que requieren traslados",
+   "Universidad grande de cobertura nacional",
+   "Sede Santiago consolidada en Providencia/Recoleta"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaje moderado: opera campus urbanos en la RM con necesidad de movilidad de servicio, pero sin señales fuertes de flota grande, programa EV ni acercamiento masivo; oportunidad de servicio/logística más que de transporte de pasajeros a gran escala.",
+  "vans_estimadas": "1-3 unidades de servicio/logística inter-campus",
+  "veh_estimados": "Flota propia pequeña de servicios en sede Santiago",
+  "fuentes": [
+   "https://www.uss.cl/sedes/santiago/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Universidad del Desarrollo (UDD)",
+  "industria": "Educación superior (universidad privada)",
+  "nivel": 1,
+  "ubicacion": "RM: Campus San Carlos de Apoquindo / RESB (Las Condes), Santiago",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "El campus de Las Condes opera buses de acercamiento gratuitos desde estación Los Dominicos en franja amplia (07:00-20:00) con flota tercerizada (operador Yanguas) en ruta fija; depende de combustión y de un tercero, sin alineación EV con su programa UDD Sustentable.",
+  "beneficio_ev48": "EV48 cubre la ruta corta metro-campus con horario extendido y alta repetición, donde la autonomía y recarga nocturna calzan perfecto; reduce costos de combustible y emisiones, dando contenido concreto a UDD Sustentable.",
+  "decisores_titulos": [
+   "Director(a) de Operaciones / Servicios Generales",
+   "Vicerrector(a) de Economía y Administración",
+   "Coordinador(a) UDD Sustentable",
+   "Jefe(a) de Asuntos Estudiantiles (transporte)"
+  ],
+  "senales": [
+   "Buses de acercamiento gratuitos desde metro Los Dominicos, 07:00-20:00",
+   "Servicio operado por tercero (Yanguas)",
+   "Programa institucional UDD Sustentable / Campus Sustentable",
+   "Campus único de destino (San Carlos de Apoquindo) facilita base de recarga"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Ruta de acercamiento urbana fija y de alta frecuencia en la RM, sin EVs (greenfield) y con programa de sostenibilidad que necesita acciones tangibles; flota tercerizada habilita reemplazo piloto con EV48.",
+  "vans_estimadas": "3-6 unidades para ruta metro-campus",
+  "veh_estimados": "Flota de acercamiento tercerizada operando jornada extendida diaria",
+  "fuentes": [
+   "https://alumnos-scl.udd.cl/buses-de-acercamiento/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Gasvalpo / Energas (Grupo Gasvalpo)",
+  "industria": "Distribución de gas natural por red",
+  "nivel": 2,
+  "ubicacion": "Valparaíso, La Serena, Coquimbo, Los Andes, Talca",
+  "foco_rm": false,
+  "flota_band": "mediana",
+  "urbano_level": "fuera_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Servicio técnico residencial/comercial/industrial y atención de emergencias 24/7 sobre +1.500 km de red, lo que implica cuadrillas con vehículos de servicio en recorridos urbanos repetitivos en sus ciudades de concesión.",
+  "beneficio_ev48": "Van eléctrica de servicio técnico para cuadrillas de mantenimiento de red de gas en zonas urbanas, reduciendo costos de combustible y emisiones en recorridos predecibles dentro de cada ciudad.",
+  "decisores_titulos": [
+   "Gerente de Operaciones / Distribución",
+   "Jefe de Servicio Técnico",
+   "Jefe de Flota",
+   "Jefe de Compras"
+  ],
+  "senales": [
+   "Distribuidora de gas por red más antigua de Chile (1853)",
+   "Servicio técnico y emergencias 24/7",
+   "+90.000 clientes y +1.500 km de red"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: 15-40 vehículos de servicio técnico",
+  "veh_estimados": "Estimación: varias decenas de vehículos de cuadrilla",
+  "justificacion": "Operación urbana de cuadrillas de gas con recorridos repetitivos y greenfield EV, pero opera fuera de la RM (Valparaíso/Coquimbo/Talca). Apetito EV menos visible. Nivel 2 por segmento, no RM-first.",
+  "fuentes": [
+   "https://www.gasvalpo.cl/serviciotecnico.aspx"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "PC Factory",
+  "industria": "Retail especialista en tecnologia y computacion",
+  "nivel": 3,
+  "ubicacion": "Santiago, RM (casa matriz y tiendas en RM); 28 tiendas en Chile",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Despacho de productos tecnologicos (parcels livianos) en RM con omnicanalidad tienda-online; volumen por bulto bajo, lo que limita la necesidad de vans de carga media.",
+  "beneficio_ev48": "La EV48 podria consolidar despachos urbanos RM de e-commerce y reposicion entre tiendas con imagen sostenible, alineada a su estrategia de economia circular, aunque el volumen liviano la posiciona mas como complemento.",
+  "decisores_titulos": [
+   "Gerente de Operaciones / Logistica",
+   "Gerente de Sostenibilidad y Personas",
+   "Jefe de Distribucion / E-commerce",
+   "Coordinador de Despacho"
+  ],
+  "senales": [
+   "28 tiendas con fuerte presencia en RM",
+   "Estrategia de sostenibilidad: puntos de reciclaje de residuos electronicos y economia circular",
+   "Omnicanal con despacho a domicilio y retiro inmediato en tienda"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Retailer tech con presencia RM, despacho urbano y agenda de sostenibilidad (acceso a decisores alto, vocerias de sostenibilidad). Sin embargo el producto es liviano y de bajo volumen por bulto, por lo que potencial_elect es bajo (van mediana sobredimensionada). Nivel 3 por menor calce de flota propia de carga.",
+  "fuentes": [
+   "https://www.diariosustentable.com/2023/01/pc-factory-instala-quinto-punto-de-reciclaje-para-desechos-electronicos-en-nueva-tienda-de-vitacura/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Nuevosur S.A. (Aguas Nuevo Sur Maule)",
+  "industria": "Servicios sanitarios (agua potable, alcantarillado y tratamiento)",
+  "nivel": 3,
+  "ubicacion": "Region del Maule (Talca y comunas); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "4ta sanitaria del pais; opera redes urbanas y cuadrillas de emergencia distribuidas en comunas del Maule (Talca, San Javier, Longavi, Lontue). Mantencion de plantas y redes con vehiculos de terreno; planes de inversion crecientes (~$24 mil millones/ano) que incluyen renovacion operativa.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas urbanas de mantencion y atencion en Talca y ciudades del Maule, bajando combustible y emisiones. Recorridos urbanos repetitivos compatibles con autonomia EV. Fuera de la RM, despliegue regional.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Flota / Logistica",
+   "Encargado de Sostenibilidad / Medio Ambiente",
+   "Gerente de Abastecimiento"
+  ],
+  "senales": [
+   "Cuarta empresa sanitaria mas importante de Chile",
+   "Gestion y operacion vinculada a Essbio; controlador Marubeni (grupo Aguas Nuevas)",
+   "Plan de inversiones ~$24 mil millones anuales y cuadrillas de emergencia por comuna",
+   "Renovacion de redes y estanques 2024-2026"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Sanitaria regional con flota propia pequena de servicio, totalmente fuera de la RM (foco_rm=false). ESG medio (iniciativas, sin reporte tan consolidado como Essbio). fin_level alta por pertenecer a grupo solido y planes de inversion robustos. Adopcion media; competidor_ev ninguno (greenfield). potencial_elect bajo por menor escala de flota urbana concentrada y ubicacion fuera de RM. Nivel 3 por encaje geografico debil para la oferta RM-first.",
+  "fuentes": [
+   "https://diariotalca.cl/nuevosur-hace-un-positivo-balance-y-proyecta-incremento-de-inversiones-para-2026/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Aguas del Altiplano S.A. (Grupo Aguas Nuevas)",
+  "industria": "Servicios sanitarios (agua potable, alcantarillado y tratamiento)",
+  "nivel": 3,
+  "ubicacion": "Regiones de Arica y Parinacota y de Tarapaca (Arica, Iquique, Alto Hospicio, Pozo Almonte); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Opera servicios sanitarios en 10 localidades urbanas del extremo norte bajo condiciones geograficas y climaticas exigentes, con cuadrillas de terreno que recorren cascos urbanos de Arica, Iquique y Alto Hospicio para mantencion, lectura y emergencias.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas urbanas en Arica e Iquique (recorridos cortos y repetitivos), reduciendo combustible y emisiones; el clima calido del norte favorece desempeno de bateria. Fuera de RM, despliegue regional.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Flota / Logistica",
+   "Encargado de Sostenibilidad",
+   "Gerente de Abastecimiento"
+  ],
+  "senales": [
+   "Opera 10 localidades urbanas en Arica-Parinacota y Tarapaca",
+   "Pertenece al grupo Aguas Nuevas (Marubeni)",
+   "Servicio en zonas de alta complejidad hidrica",
+   "Centro de operaciones y atencion en Iquique/Arica"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Sanitaria regional con flota propia pequena de servicio urbano, fuera de la RM (foco_rm=false). ESG medio (iniciativas grupales). fin_level alta por grupo Aguas Nuevas. Acceso alto. Adopcion media; competidor_ev ninguno. potencial_elect bajo por menor escala y ubicacion en el extremo norte, lejos de la RM. Nivel 3 por debil encaje RM-first.",
+  "fuentes": [
+   "https://www.aguasnuevas.cl/empresas-aguas-del-altiplano"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Casaideas",
+  "industria": "Retail de decoracion, muebles y articulos para el hogar",
+  "nivel": 2,
+  "ubicacion": "Santiago, RM (CD principal en RM, 19.000 pallets); ~40 tiendas en Chile",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "medio",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Ultima milla de decoracion y muebles en RM (incluido same-day) ejecutada via multiples transportistas externos; necesita confiabilidad y control de costos en zona urbana densa.",
+  "beneficio_ev48": "La EV48 soporta rutas urbanas RM repetitivas y same-day de carga ligera/media sin emisiones, permitiendo a Casaideas diferenciar su last-mile con sostenibilidad y mejor control que el modelo tercerizado.",
+  "decisores_titulos": [
+   "Gerente de Logistica Chile",
+   "Jefe de Distribucion / Ultima Milla",
+   "Gerente de Operaciones",
+   "Coordinador de Transporte"
+  ],
+  "senales": [
+   "CD principal en RM con capacidad de 19.000 pallets",
+   "Despacho RM estandar 2-5 dias y opcion same-day",
+   ">230 puntos de retiro a nivel nacional",
+   "Ultima milla declarada como ejecutada via diversas empresas de transporte (tercerizada)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Retail de hogar con CD y operacion logistica robusta en RM y last-mile urbano (same-day). Flota tercerizada (la propia empresa declara reparto via terceros) reduce el control de flota propia, pero hay oportunidad de propuesta EV. ESG medio por foco en cadena/eficiencia logistica. Greenfield EV.",
+  "fuentes": [
+   "https://casaideas.zendesk.com/hc/es/articles/360048420033-Informaci%C3%B3n-de-Despacho"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Universidad Tecnológica Metropolitana (UTEM)",
+  "industria": "Educación superior (universidad estatal)",
+  "nivel": 2,
+  "ubicacion": "RM: 3 campus (Santiago, Ñuñoa, Providencia)",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "lider",
+  "fin_level": "restringida",
+  "adopcion_level": "media",
+  "acceso_level": "bajo",
+  "canal_compra": "mercado_publico",
+  "competidor_ev": "parcial",
+  "potencial_elect": "alto",
+  "dolor": "Universidad estatal con 3 campus en la RM y necesidad de movilidad urbana administrativa/inter-campus; tiene los mayores compromisos de carbono del sistema (todos los sellos Huella Chile) pero su flota es pequeña y a combustión, presionada por presupuesto público acotado.",
+  "beneficio_ev48": "EV48 como vehículo institucional/servicio de cero emisiones que extiende su liderazgo en HuellaChile (ya neutralizada/excelencia) y profundiza la electrificación iniciada con su vehículo híbrido; reemplazo de baja autonomía perfecto para circuitos urbanos entre campus.",
+  "decisores_titulos": [
+   "Director(a) de Administración y Finanzas",
+   "Dirección de Gestión Ambiental / Sostenibilidad",
+   "Jefe(a) de Servicios Generales",
+   "Unidad de Adquisiciones (ChileCompra)"
+  ],
+  "senales": [
+   "Único establecimiento educacional con los 4 sellos HuellaChile (Cuantificación, Reducción, Neutralización, Excelencia)",
+   "Adquisición de vehículo híbrido para rectoría (2019)",
+   "Sistema de gestión de energía certificado (2020)",
+   "3 campus en la RM y APL en educación superior"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Líder ESG del segmento con voluntad probada de electrificar (ya tiene híbrido) y operación urbana en la RM; el freno es el canal de mercado público (ChileCompra) y presupuesto estatal acotado, además de acceso a decisores más burocrático.",
+  "vans_estimadas": "2-4 unidades institucionales/servicio",
+  "veh_estimados": "Flota institucional pequeña (incluye al menos un híbrido) en 3 campus RM",
+  "fuentes": [
+   "https://portaloficinaverde.mma.gob.cl/buenaspracticas/universidad-tecnologica-metropolitana/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Provefarma SpA",
+  "industria": "Distribución de medicamentos y productos de salud",
+  "nivel": 2,
+  "ubicacion": "Dr. Torres Boonen 511, Providencia, Región Metropolitana, Santiago",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "nulo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "mixto",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "alto",
+  "dolor": "Distribuye más de 4.000 medicamentos a hospitales, clínicas, centros médicos, farmacias y laboratorios con despacho diario; promesa de entrega de 24h en la RM. Reparto urbano repetitivo intensivo en Santiago con flota de combustión.",
+  "beneficio_ev48": "La EV48 cubre la promesa de 24h en la RM con menor costo operativo y cero emisiones en entregas urbanas repetitivas a puntos de salud; refuerza imagen B2B de salud responsable, hoy sin narrativa ESG.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones / Logística",
+   "Jefe de Distribución y Despacho",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Centro de distribución con +4.000 medicamentos, despacho a 332 comunas",
+   "Promesa de entrega de 24h en la Región Metropolitana",
+   "Red logística con despacho diario en la mayor parte de las comunas",
+   "Abastece hospitales, clínicas, farmacias y laboratorios (B2B salud)"
+  ],
+  "vans_estimadas": "<30 a 50 furgones/camionetas de despacho, núcleo urbano RM (estimación)",
+  "veh_estimados": "<30-50 vehículos propios + transporte tercerizado a regiones",
+  "dato_calidad": "investigado",
+  "justificacion": "Distribuidor de salud con base en Providencia RM, despacho diario y promesa de 24h en la RM: reparto urbano repetitivo claro. Flota mediana/pequeña, sin EVs ni ESG visible (greenfield). Organigrama de empresa privada accesible. Encaje sólido aunque escala menor que líderes; nivel 2.",
+  "fuentes": [
+   "https://www.provefarma.cl/quienes-somos/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "E-Courier",
+  "industria": "Logística de última milla / despacho e-commerce",
+  "nivel": 2,
+  "ubicacion": "Pudahuel, Santiago, Región Metropolitana (también Valparaíso)",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Despacho same-day para e-commerce y operación como flota satélite de Mercado Flex y Falabella Flex en la RM; rutas urbanas intensivas con furgonetas/camiones de combustión y márgenes ajustados de PYME logística.",
+  "beneficio_ev48": "La EV48 sustituye furgonetas de combustión en sus rutas same-day de la RM, reduciendo costo por entrega y dando acceso a zonas urbanas con restricción, clave para sus operaciones Flex.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Dueño / Gerente General",
+   "Jefe de Flota",
+   "Encargado Comercial"
+  ],
+  "senales": [
+   "Opera same-day en la RM y Valparaíso con base en Pudahuel",
+   "Flota propia declarada 'desde furgonetas a camiones'",
+   "Operador de Mercado Envíos Flex y Falabella Flex (e-commerce last mile)",
+   "Red de pickup y tracking en línea"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Foco urbano same-day en la RM con flota propia, ideal por recorridos repetitivos, pero empresa pequeña con menor capacidad de capex. Greenfield EV, acceso B2B medio por estructura PYME.",
+  "veh_estimados": "Estimación: flota pequeña (30-100 vehículos)",
+  "vans_estimadas": "Furgonetas de reparto urbano más algunos camiones livianos",
+  "fuentes": [
+   "https://e-courier.cl/env%C3%ADos-empresas"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Transportes Marlop",
+  "industria": "Transporte de carga terrestre y última milla",
+  "nivel": 3,
+  "ubicacion": "Santiago, Región Metropolitana (cobertura nacional)",
+  "foco_rm": true,
+  "flota_band": "mediana",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "nulo",
+  "fin_level": "media",
+  "adopcion_level": "baja",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Flota mayormente de camiones de mediano/alto tonelaje para rutas nacionales, con un componente menor de distribución urbana en Santiago; la última milla con furgones es solo una parte de su operación.",
+  "beneficio_ev48": "La EV48 podría cubrir su segmento de distribución urbana en Santiago (zonas con restricción de circulación), pero su core es carga interurbana donde la EV48 no aplica, acotando el caso.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Dueño / Gerente General",
+   "Jefe de Flota"
+  ],
+  "senales": [
+   "Fundada en 2020; flota diversificada de camiones con cobertura Arica-Punta Arenas",
+   "Cuenta con vehículos de distribución urbana para última milla en Santiago",
+   "GPS y monitoreo 24/7; foco principal en carga terrestre de tonelaje"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Tiene operación urbana en Santiago con furgones, pero su negocio es predominantemente carga interurbana de camiones (distribución mixta), lo que reduce el ajuste con la EV48 y baja el potencial de electrificación de van.",
+  "veh_estimados": "Estimación: flota mediana de camiones + furgones (100-300)",
+  "vans_estimadas": "Subconjunto de furgones de distribución urbana en la RM",
+  "fuentes": [
+   "https://transportesmarlop.cl/ultima-milla-logistica-como-transportes-marlop-optimiza-tu-entrega-final/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Edelmag (Empresa Eléctrica de Magallanes)",
+  "industria": "Generación, transmisión y distribución eléctrica (con generación a gas natural)",
+  "nivel": 3,
+  "ubicacion": "Región de Magallanes (Punta Arenas, Puerto Natales, Porvenir, Puerto Williams)",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "medio",
+  "fin_level": "alta",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Cuadrillas de servicio en ciudades australes con recorridos urbanos repetitivos, pero clima extremo y baja temperatura afectan autonomía de baterías; opera muy lejos de la RM.",
+  "beneficio_ev48": "Podría servir cuadrillas urbanas en Punta Arenas, pero el frío austral penaliza la autonomía y el ajuste; además está fuera de la RM, lejos del foco comercial.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones",
+   "Jefe de Flota",
+   "Jefe de Abastecimiento"
+  ],
+  "senales": [
+   "Incorporó su primer vehículo eléctrico a la flota en 2019",
+   "Inversión de $100 millones en red de 5 cargadores públicos en Magallanes (2026)",
+   "57.331 clientes"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: 5-20 vehículos de servicio",
+  "veh_estimados": "Estimación: <50 vehículos de operación",
+  "justificacion": "Distribuidora con cuadrillas urbanas e iniciativas de electromovilidad, pero ubicación austral extrema fuera de la RM y clima que penaliza baterías. Nivel 3, incluida por relevancia de segmento.",
+  "fuentes": [
+   "https://laprensaaustral.cl/2026/06/06/con-una-inversion-de-100-millones-edelmag-impulsa-red-de-cinco-cargadores-electricos-en-magallanes/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Salmones Camanchaca",
+  "industria": "Proteina acuicola (salmon) refrigerada/congelada",
+  "nivel": 3,
+  "ubicacion": "Operacion productiva en sur de Chile (Los Lagos/Aysen); oficina y mercado en Santiago",
+  "foco_rm": false,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "alto",
+  "fin_level": "alta",
+  "adopcion_level": "baja",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Su negocio es principalmente exportador y de canal retail; el reparto urbano propio en la RM es marginal (e-commerce 'Salmon de Chile para Chile' con despacho a domicilio, mayormente tercerizado), por lo que la operacion de flota urbana propia es limitada.",
+  "beneficio_ev48": "EV48 solo aplicaria a un eventual reparto urbano propio de su canal nacional/e-commerce en la RM; hoy ese volumen es bajo y mayormente tercerizado, limitando el caso de negocio inmediato.",
+  "decisores_titulos": [
+   "Gerente de Operaciones Comerciales Chile",
+   "Gerente de Logistica",
+   "Gerente de Sostenibilidad",
+   "Jefe de Canal Nacional / E-commerce"
+  ],
+  "senales": [
+   "Empresa salmonera vertical con 100% electricidad renovable y comite de sostenibilidad",
+   "Reportes de sostenibilidad anuales (hoja de ruta y metas) - ESG alto",
+   "Canal nacional 'Salmon de Chile para Chile' con e-commerce y despacho a domicilio en Santiago",
+   "Negocio dominado por exportacion y retail, no por flota urbana propia"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 3: excelente perfil ESG (renovables, reportes, metas) pero debil encaje operativo: distribucion mayormente export/retail y reparto urbano propio en RM marginal y tercerizado. foco_rm=false, flota urbana tercerizada/gig, potencial EV bajo en el corto plazo.",
+  "fuentes": [
+   "https://salmonescamanchaca.cl/sostenibilidad/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Hites (Empresas Hites S.A.)",
+  "industria": "Tienda por departamento (vestuario, electro, hogar, muebles) + retail financiero",
+  "nivel": 2,
+  "ubicacion": "Santiago, RM (casa matriz y mayoria de tiendas en RM)",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Despacho a domicilio de muebles, linea blanca y electro en RM (lunes a sabado) con dependencia de transportistas externos; presion por costos y cumplimiento de ventanas en zona urbana densa.",
+  "beneficio_ev48": "La EV48 permite internalizar o renovar rutas urbanas RM de mayor volumen (muebles/electro) con cero emisiones, mejorando control de servicio y costo frente al modelo tercerizado.",
+  "decisores_titulos": [
+   "Gerente de Logistica y Distribucion",
+   "Subgerente de Transporte / Ultima Milla",
+   "Gerente de Operaciones / Supply Chain",
+   "Jefe de Despacho"
+  ],
+  "senales": [
+   "Mayoria de tiendas concentradas en RM (Recoleta, Providencia, etc.)",
+   "Despacho a domicilio lunes a sabado con costo segun tamaño y destino",
+   "Reclutamiento de conductores de reparto",
+   "Cotiza en bolsa (Empresas Hites S.A.)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Tienda por departamento con fuerte concentracion en RM y despacho a domicilio de bienes voluminosos. Flota mayormente tercerizada/gig hoy, lo que abre oportunidad de propuesta EV para internalizar rutas urbanas. Fin_level media (empresa mediana cotizada con historico de presion financiera) y ESG bajo.",
+  "fuentes": [
+   "https://www.hites.com/servicio-al-cliente-articles/despacho-a-domicilio.html"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Empresas ABC (ex La Polar + AD Retail/ABCDIN)",
+  "industria": "Tienda por departamento y retail financiero (vestuario, hogar, electro, muebles)",
+  "nivel": 2,
+  "ubicacion": "Providencia (casa matriz) y CD en Pudahuel, RM; ~100 tiendas en Chile",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Despacho a domicilio de muebles, electro y linea blanca desde CD unico en Pudahuel hacia toda la RM (lunes a sabado), con foco en eficiencia tras la fusion y dependencia de transporte externo.",
+  "beneficio_ev48": "La EV48 entrega rutas urbanas RM repetitivas de volumen medio desde el CD de Pudahuel con cero emisiones, apoyando la racionalizacion de costos post-fusion y control del servicio de ultima milla.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Supply Chain",
+   "Subgerente de Distribucion y Ultima Milla",
+   "Gerente de Operaciones",
+   "Jefe de Transporte / Flota"
+  ],
+  "senales": [
+   "Fusion La Polar + AD Retail (2024) en marca 'abc' con CD consolidado en Pudahuel (RM)",
+   "~100 tiendas y casa matriz en Providencia",
+   "Despacho a domicilio lunes a sabado",
+   "Plan de eliminacion de duplicidades y optimizacion logistica post-fusion"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Gran tienda por departamento con CD unico en Pudahuel (RM) y despacho urbano intensivo. Incluye a ABCDIN (ahora parte de ABC); Dijon esta cerrado desde 2020, por eso no se lista por separado. Flota tercerizada y momento de reestructuracion logistica abren ventana para EV. Fin_level media por historico financiero y proceso de fusion.",
+  "fuentes": [
+   "https://www.latercera.com/pulso/noticia/como-sera-la-nueva-empresa-que-surgira-de-la-fusion-entre-la-polar-y-abcdin/M2TGFMNF2JFXDAGRHYEYDKNZ6I/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Preunic (Empresas Preunic / grupo Empresas ABC)",
+  "industria": "Retail de belleza, cuidado personal y articulos para el hogar (drugstore/variedades)",
+  "nivel": 3,
+  "ubicacion": "Santiago, RM (red de tiendas concentrada en RM); operacion nacional",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Despacho a domicilio de productos de belleza y hogar (bultos pequeños) en RM con e-commerce y reparto mayormente externo/gig; bajo volumen por entrega.",
+  "beneficio_ev48": "La EV48 serviria para consolidar rutas urbanas RM de e-commerce y reposicion de tiendas con cero emisiones, mas como herramienta de imagen sostenible que por necesidad de capacidad de carga.",
+  "decisores_titulos": [
+   "Gerente de Logistica / Distribucion",
+   "Jefe de E-commerce y Despacho",
+   "Gerente de Operaciones",
+   "Coordinador de Transporte"
+  ],
+  "senales": [
+   "Despacho gratis en RM sobre cierto monto y operacion e-commerce",
+   "Red de tiendas con fuerte presencia en RM",
+   "Reparto apoyado en terceros/plataformas (ej. Rappi) para ultima milla"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Cadena con presencia RM y despacho urbano, pero el producto es de bajo volumen y la ultima milla es mayormente tercerizada/gig, lo que baja el calce con una van de carga media. Greenfield EV. Nivel 3 por menor intensidad de flota propia y carga liviana; potencial_elect bajo.",
+  "fuentes": [
+   "https://preunic.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "MEDS (Clínica MEDS y Centros Médico-Deportivos)",
+  "industria": "Salud privada (medicina deportiva, clínica y red de centros médicos)",
+  "nivel": 3,
+  "ubicacion": "Clínica MEDS La Dehesa (Lo Barnechea) y ~10 centros en la RM (Maipú, Calera de Tango, La Florida, La Reina, Vitacura, Isabel La Católica, Piedra Roja, etc.)",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "distribucion_mixta",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Red de ~10 centros en la RM (más Rancagua/Antofagasta) requiere traslado de muestras, insumos médicos y equipamiento entre sedes y a eventos deportivos, generando rutas urbanas periódicas.",
+  "beneficio_ev48": "EV48 para logística inter-sedes de muestras/insumos y soporte logístico a coberturas de eventos deportivos urbanos, con bajo costo operativo y mensaje de salud + sostenibilidad coherente con su marca deportiva.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Logística / Abastecimiento",
+   "Jefe de Servicios Generales",
+   "Gerente de Administración y Finanzas"
+  ],
+  "senales": [
+   "Red de ~10 centros médico-deportivos concentrados en la RM",
+   "Clínica MEDS La Dehesa con servicios ambulatorios y de urgencia",
+   "Coberturas de eventos deportivos que implican traslado de equipos y personal"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaje real pero menor: red multi-sede en la RM con logística urbana, pero flota propia muy pequeña y necesidad de vans más acotada que clínicas grandes. Greenfield EV; nivel 3 por menor escala de flota y capacidad financiera media.",
+  "veh_estimados": "<30 vehículos de logística inter-sede y apoyo",
+  "vans_estimadas": "1-5 vans/furgones de traslado de muestras, insumos y equipamiento en la RM",
+  "fuentes": [
+   "https://www.meds.cl/centros-meds/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Aguas Magallanes S.A. (Grupo Aguas Nuevas)",
+  "industria": "Servicios sanitarios (agua potable, alcantarillado y tratamiento)",
+  "nivel": 3,
+  "ubicacion": "Region de Magallanes (Punta Arenas, Puerto Natales, Porvenir, Puerto Williams); opera fuera de la RM",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "medio",
+  "fin_level": "media",
+  "adopcion_level": "baja",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Atiende ~63.000 clientes en ciudades del extremo austral con 812 km de redes de distribucion; cuadrillas de mantencion y atencion recorren cascos urbanos de Punta Arenas y Puerto Natales bajo clima frio extremo.",
+  "beneficio_ev48": "Vans EV48 para cuadrillas urbanas en Punta Arenas (recorridos cortos), pero el clima frio extremo austral reduce autonomia de bateria y complica la operacion, por lo que el ajuste es limitado. Fuera de RM.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Jefe de Flota",
+   "Encargado de Sostenibilidad",
+   "Gerente de Abastecimiento"
+  ],
+  "senales": [
+   "~63.000 clientes; cobertura agua potable 100%",
+   "812 km de redes de distribucion y 614 km de alcantarillado",
+   "Pertenece al grupo Aguas Nuevas",
+   "Operacion urbana concentrada en pocas ciudades australes"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Sanitaria pequena del extremo austral, fuera de la RM (foco_rm=false). ESG medio; fin_level media por menor escala (~63k clientes). Acceso alto (estructura de grupo clara). Adopcion baja y potencial_elect bajo por escala reducida, clima frio extremo que penaliza baterias y maxima lejania de la RM. competidor_ev ninguno. Nivel 3: lead de menor prioridad por encaje geografico y climatico desfavorable.",
+  "fuentes": [
+   "https://www.aguasmagallanes.cl/p_295-304_datos-oficinas"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "SMAPA (Servicio Municipal de Agua Potable y Alcantarillado de Maipu)",
+  "industria": "Servicios sanitarios (agua potable y alcantarillado), empresa sanitaria municipal",
+  "nivel": 2,
+  "ubicacion": "Maipu, Cerrillos, Estacion Central y parte de San Bernardo, Region Metropolitana, Chile",
+  "foco_rm": true,
+  "flota_band": "pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "bajo",
+  "fin_level": "restringida",
+  "adopcion_level": "baja",
+  "acceso_level": "medio",
+  "canal_compra": "mercado_publico",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Operacion 100% urbana en la RM (Maipu/Cerrillos/Estacion Central) con cuadrillas que recorren la misma red de ~203.000 conexiones a diario: reparacion de matrices, lectura, atencion de emergencias y mantencion. Recorridos cortos, repetitivos y de baja velocidad, ideales para van electrica, pero el servicio arrastra desfinanciamiento, deuda a proveedores (~$5.700M CLP) y cumplimiento de plan de inversiones cercano a 0-7%, lo que limita CapEx en flota.",
+  "beneficio_ev48": "Reemplazo de camionetas/furgones de cuadrilla por vans EV48 reduce combustible y mantencion en rutas urbanas fijas dentro de la RM, donde la EV48 cubre holgadamente la autonomia diaria y se recarga en bases nocturnas. Util como senal de modernizacion ante criticas de gestion. Mejor via leasing/renting para no comprometer CapEx dada la restriccion presupuestaria.",
+  "decisores_titulos": [
+   "Director de SMAPA",
+   "Subdirector de Operaciones",
+   "Jefe de Flota / Logistica",
+   "Encargado de Adquisiciones / Abastecimiento municipal",
+   "Director de Medio Ambiente Municipalidad de Maipu"
+  ],
+  "senales": [
+   "Unica empresa sanitaria municipal del pais y 2do operador sanitario de la RM (~1M habitantes)",
+   "Operacion concentrada en comunas urbanas de la RM con cuadrillas de terreno",
+   "Restriccion financiera severa: deuda a proveedores y plan de inversiones incumplido",
+   "Compra via Mercado Publico / licitacion municipal"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaja por operacion intensiva urbana en la RM (foco_rm=true) con cuadrillas en recorridos repetitivos, perfil exacto de la EV48. Flota propia estimada pequena (decenas de vehiculos de servicio). ESG bajo (sin reporte robusto). fin_level restringida por ser municipal desfinanciada con deuda y bajo cumplimiento de inversiones (publico muy acotado). Adopcion baja por restriccion presupuestaria y compra via mercado_publico. Greenfield en EV. Es el lead RM-first del segmento.",
+  "fuentes": [
+   "https://www.municipalidadmaipu.cl/smapa"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Wilcom SpA",
+  "industria": "ISP regional / internet fibra óptica y televisión",
+  "nivel": 3,
+  "ubicacion": "ISP regional con cobertura en comunas (incl. zona central); operación urbana",
+  "foco_rm": false,
+  "flota_band": "muy_pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Instalaciones FTTH y servicio técnico domiciliario en sus comunas de cobertura requieren cuadrillas con camionetas; al ser ISP pequeño, la flota es reducida y muy sensible al costo de combustible y mantención.",
+  "beneficio_ev48": "Una o dos EV48 para sus cuadrillas de instalación reducirían el costo operativo de un ISP pequeño y diferenciarían su marca local, aunque el volumen es bajo.",
+  "decisores_titulos": [
+   "Dueño / Gerente General",
+   "Jefe de Operaciones / Técnico"
+  ],
+  "senales": [
+   "ISP de fibra e internet/TV con instalación propia (gratis hasta 350 m en postación aérea o ductos)",
+   "Evalúa factibilidad técnica por domicilio y opera con cuadrillas de instalación",
+   "Aparece en el mapa de cobertura de Subtel como operador de telecomunicaciones"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 3: ISP pequeño con cuadrillas de instalación urbana reales, decisor accesible y greenfield EV, pero flota muy pequeña, capacidad financiera baja, ESG nulo y presencia RM no confirmada como foco principal. Potencial de electrificación bajo por volumen.",
+  "fuentes": [
+   "https://wilcom.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Sitelco (SITELCO SpA)",
+  "industria": "ISP / WISP y fibra óptica",
+  "nivel": 3,
+  "ubicacion": "Pirque y sur de Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "alto",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Instalaciones inalámbricas (WISP) y de fibra, más mantención de enlaces en Pirque y sur de Santiago, exigen visitas técnicas con camioneta por rutas periurbanas/urbanas repetitivas; flota reducida muy sensible a costos.",
+  "beneficio_ev48": "EV48 para las visitas técnicas en su zona de cobertura del sur de la RM, con ahorro de combustible en rutas repetitivas; volumen limitado por tamaño del ISP.",
+  "decisores_titulos": [
+   "Dueño / Gerente General",
+   "Encargado de Operaciones / Soporte Técnico"
+  ],
+  "senales": [
+   "Se identifica como ISP de internet fibra óptica en Pirque y sur de Santiago (RM)",
+   "Ofrece WISP, fibra hogar/dedicada, hosting, VPS y enlaces dedicados",
+   "Cobertura periurbana en la RM con instalación propia"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Nivel 3: ISP pequeño con foco real en la RM (Pirque/sur de Santiago) y cuadrillas de instalación urbana/periurbana, decisor accesible y greenfield EV, pero flota muy pequeña, capacidad financiera baja y sin ESG; potencial de electrificación bajo por escala.",
+  "fuentes": [
+   "https://www.sitelco.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Shipex",
+  "industria": "Fulfillment y última milla para tiendas online",
+  "nivel": 3,
+  "ubicacion": "Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Procesa ~500 envíos diarios para +350 e-commerce con flota propia para Santiago y couriers para regiones; volumen bajo y márgenes de PYME limitan la inversión en renovación de flota.",
+  "beneficio_ev48": "Una o dos EV48 podrían cubrir su reparto urbano propio en Santiago a menor costo por km y servir de diferenciador verde para sus clientes e-commerce; pero el volumen actual limita el caso a corto plazo.",
+  "decisores_titulos": [
+   "Dueño / Gerente General",
+   "Encargado de Operaciones / Bodega",
+   "Jefe de Despacho"
+  ],
+  "senales": [
+   "+10 años de mercado, +350 e-commerce atendidos y ~500 envíos diarios",
+   "Flota propia para despacho en Santiago y couriers locales para regiones",
+   "Servicios de bodega + fulfillment + última milla integrados a plataformas e-commerce"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Encaja por foco urbano RM y flota propia, pero su tamaño (muy pequeña, ~500 envíos/día) y capacidad financiera baja lo hacen un prospecto de menor prioridad. Greenfield EV.",
+  "veh_estimados": "Estimación: flota muy pequeña (<30 vehículos propios para Santiago)",
+  "vans_estimadas": "Pocos furgones de reparto urbano propios",
+  "fuentes": [
+   "https://shipex.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Cooperativa Copelec",
+  "industria": "Distribución eléctrica (cooperativa) + retail y servicios",
+  "nivel": 3,
+  "ubicacion": "Región de Ñuble (Chillán y comunas aledañas)",
+  "foco_rm": false,
+  "flota_band": "pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "bajo",
+  "fin_level": "media",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Cuadrillas de distribución eléctrica que cubren Chillán urbano y comunas rurales de Ñuble; recorridos mixtos urbano-rurales que limitan el ajuste de una van puramente urbana.",
+  "beneficio_ev48": "En el casco urbano de Chillán la EV48 puede servir cuadrillas de lectura/servicio comercial con recorridos repetitivos; el ajuste cae en los tramos rurales de su zona de concesión.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Gerente de Operaciones",
+   "Jefe de Flota / Servicios",
+   "Encargado de Compras"
+  ],
+  "senales": [
+   "Mayor cooperativa eléctrica de Chile, +82.000 clientes",
+   "Holding con retail y servicios además de distribución",
+   "Distribuye a 21 comunas de Ñuble"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: 5-20 vehículos de servicio",
+  "veh_estimados": "Estimación: <50 vehículos de cuadrilla/operación",
+  "justificacion": "Cooperativa eléctrica real con cuadrillas de terreno (segmento solicitado), pero fuera de la RM, con zona mixta urbano-rural y menor capacidad financiera y ESG. Nivel 3.",
+  "fuentes": [
+   "https://es.wikipedia.org/wiki/Cooperativa_Copelec"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Pharmamerica",
+  "industria": "Distribución farmacéutica (enfermedades crónicas)",
+  "nivel": 3,
+  "ubicacion": "Dr. Johow 805, Ñuñoa, Región Metropolitana, Santiago",
+  "foco_rm": true,
+  "flota_band": "muy_pequena",
+  "urbano_level": "servicio_urbano_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "mixto",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Distribuidora farmacéutica enfocada en tratamientos crónicos que entrega a médicos y farmacéuticos con presencia en la RM; opera despachos urbanos pero con flota muy reducida y sin sistemas logísticos publicitados.",
+  "beneficio_ev48": "Para un volumen acotado, una o dos EV48 cubrirían el reparto urbano RM a profesionales/farmacias con bajo costo operativo y diferenciación ambiental, aunque el potencial de flota es limitado.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Encargado de Operaciones / Logística",
+   "Jefe de Distribución"
+  ],
+  "senales": [
+   "Distribuidora farmacéutica con base y operación en Ñuñoa, RM",
+   "Foco en tratamientos para enfermedades crónicas (entregas recurrentes)",
+   "Abastece a médicos y farmacéuticos",
+   "Empresa de menor escala sin logística publicitada"
+  ],
+  "vans_estimadas": "<10 vehículos de reparto urbano RM (estimación)",
+  "veh_estimados": "<10 vehículos propios (estimación)",
+  "dato_calidad": "estimacion",
+  "justificacion": "Distribuidora farmacéutica real en Ñuñoa RM con reparto urbano a profesionales y farmacias, pero de escala pequeña y sin flota/logística publicitada. Encaje limitado por bajo volumen y datos de flota estimados. Nivel 3 como prospecto menor de nicho.",
+  "fuentes": [
+   "https://pharmamerica.cl/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Recibelo",
+  "industria": "Logística de última milla tech / e-commerce",
+  "nivel": 2,
+  "ubicacion": "Santiago, Región Metropolitana",
+  "foco_rm": true,
+  "flota_band": "tercerizada_gig",
+  "urbano_level": "ultima_milla_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "media",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "medio",
+  "dolor": "Modelo de última milla same-day en 36 comunas de la RM apoyado mayormente en couriers/repartidores tercerizados; el costo de combustible y la fiabilidad de la flota afectan su efectividad de entrega (97%) y márgenes.",
+  "beneficio_ev48": "Una flota troncal de EV48 propias o dedicadas podría asegurar capacidad same-day en la RM con menor costo variable y respaldar una propuesta ESG hoy inexistente, diferenciándolos.",
+  "decisores_titulos": [
+   "Gerente de Operaciones",
+   "Head of Last Mile",
+   "Cofundador / CEO",
+   "Gerente Comercial"
+  ],
+  "senales": [
+   "Cobertura same-day declarada en 36 comunas urbanas de la RM con +97% de efectividad",
+   "Posicionamiento como startup de última milla tech enfocada en e-commerce",
+   "Sin evidencia pública de flota propia significativa ni iniciativas EV (modelo apoyado en couriers)"
+  ],
+  "dato_calidad": "investigado",
+  "justificacion": "Foco urbano same-day puro en la RM, ideal por recorridos repetitivos, pero modelo principalmente tercerizado/gig y empresa pequeña, lo que reduce su capacidad de capex y baja el nivel. Greenfield EV.",
+  "veh_estimados": "No publicado; capacidad vía red de couriers",
+  "vans_estimadas": "Estimación: flota mayormente tercerizada (motos/furgones de couriers)",
+  "fuentes": [
+   "https://www.recibelo.cl/servicios/entregas-same-day-santiago-chile/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ },
+ {
+  "nombre": "Socoepa (Sociedad Cooperativa Eléctrica Paillaco)",
+  "industria": "Distribución eléctrica (cooperativa rural)",
+  "nivel": 3,
+  "ubicacion": "Región de Los Ríos (Paillaco, Máfil, Panguipulli, Futrono, Los Lagos, La Unión)",
+  "foco_rm": false,
+  "flota_band": "muy_pequena",
+  "urbano_level": "fuera_rm",
+  "esg_level": "nulo",
+  "fin_level": "baja",
+  "adopcion_level": "baja",
+  "acceso_level": "medio",
+  "canal_compra": "venta_directa",
+  "competidor_ev": "ninguno",
+  "potencial_elect": "bajo",
+  "dolor": "Cuadrillas que mantienen +1.000 km de red mayoritariamente rural en Los Ríos; recorridos largos e interurbanos/rurales que no calzan con una van urbana de autonomía acotada.",
+  "beneficio_ev48": "Beneficio limitado: sólo aplicaría a tramos urbanos puntuales en sus comunas; su operación es principalmente rural, lo que reduce fuertemente el ajuste de la EV48.",
+  "decisores_titulos": [
+   "Gerente General",
+   "Jefe de Operaciones / Terreno",
+   "Encargado de Adquisiciones"
+  ],
+  "senales": [
+   "Cooperativa rural con +1.000 km de líneas",
+   "Cobertura de 6 comunas rurales de Los Ríos",
+   "Personería jurídica desde 1956"
+  ],
+  "dato_calidad": "investigado",
+  "vans_estimadas": "Estimación: <10 vehículos de servicio",
+  "veh_estimados": "Estimación: <30 vehículos de cuadrilla",
+  "justificacion": "Cooperativa eléctrica con cuadrillas reales, pero operación rural fuera de la RM, baja capacidad financiera y sin evidencia ESG. Ajuste de van urbana muy bajo. Nivel 3, incluida por pertenecer al segmento (cooperativas eléctricas).",
+  "fuentes": [
+   "https://www.guiachileenergia.cl/sociedad-cooperativa-electrica-paillaco-ltda-socoepa/"
+  ],
+  "origen": "mapeo_workflow",
+  "verificado": false
+ }
+]
