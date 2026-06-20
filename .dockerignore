@@ -1,0 +1,9 @@
+.git
+.gitignore
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+README.md

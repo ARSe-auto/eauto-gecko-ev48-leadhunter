@@ -1,0 +1,16 @@
+# Blueprint de despliegue para Render.com (https://render.com)
+# Deploy: Render → New → Blueprint → conecta el repo → crea el servicio.
+# Luego: Settings → Custom Domains → agrega "leads.e-auto.global" y Render te da
+# el CNAME a poner en Namecheap. HTTPS automático.
+services:
+  - type: web
+    name: eauto-gecko-ev48-leadhunter
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: EAUTO_DASH_PASSWORD   # contraseña de acceso (define el valor en Render)
+        sync: false
+      - key: APOLLO_API_KEY        # API key de Apollo (opcional, para "Apollo en vivo")
+        sync: false
