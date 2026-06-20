@@ -591,10 +591,21 @@ def page_apollo_live():
                 pp = people[etiquetas.index(who)]
                 try:
                     e = apollo.ApolloClient(key).enrich_person(
-                        pp["first_name"], pp["last_name"], org_name=pp["empresa"] or q["company"],
-                        domain=dominio or pp["dominio"])
-                    st.json({k: e.get(k) for k in
-                             ["nombre", "cargo", "email", "email_status", "telefono", "linkedin", "empresa"]})
+                        apollo_id=pp.get("id"), first_name=pp["first_name"], last_name=pp["last_name"],
+                        org_name=pp["empresa"] or q["company"], domain=dominio or pp["dominio"])
+                    cE = st.columns(2)
+                    cE[0].markdown(
+                        f"**{e['nombre'] or pp['nombre']}** — {e['cargo'] or pp['cargo']}  \n"
+                        f"🏢 {e['empresa'] or pp['empresa']}")
+                    est = {"verified": "✅ verificado", "extrapolated": "≈ extrapolado",
+                           "unavailable": "🔒 no disponible en Apollo", "": "—"}.get(e["email_status"], e["email_status"])
+                    cE[1].markdown(
+                        f"📧 **{e['email'] or '— (sin email)'}**  ({est})  \n"
+                        f"📞 {e['telefono'] or '—'}  \n"
+                        f"🔗 {e['linkedin'] or '—'}")
+                    if not e["email"]:
+                        st.caption("Apollo no tiene email para este contacto (status 'unavailable'). "
+                                   "Prueba otro decisor de la lista o usa el LinkedIn.")
                 except apollo.ApolloError as ex:
                     st.error(str(ex))
         else:

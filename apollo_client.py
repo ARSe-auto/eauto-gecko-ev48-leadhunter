@@ -115,14 +115,27 @@ class ApolloClient:
         return {"people": people, "total": pg.get("total_entries"), "page": pg.get("page"),
                 "raw_count": len(people)}
 
-    def enrich_person(self, first_name: str, last_name: str, org_name: str | None = None,
-                     domain: str | None = None, reveal_personal_emails: bool = False) -> dict:
-        payload = {"first_name": first_name, "last_name": last_name,
-                   "reveal_personal_emails": reveal_personal_emails}
-        if org_name:
-            payload["organization_name"] = org_name
-        if domain:
-            payload["domain"] = domain
+    def enrich_person(self, first_name: str = "", last_name: str = "", org_name: str | None = None,
+                     domain: str | None = None, apollo_id: str | None = None,
+                     reveal_personal_emails: bool = False) -> dict:
+        """Enriquece (revela email/teléfono/LinkedIn) una persona.
+
+        Lo más confiable es por `apollo_id` (el id que devuelve la búsqueda),
+        porque la búsqueda suele traer solo el nombre de pila. Si no hay id, cae
+        a match por nombre + organización/dominio.
+        """
+        payload = {"reveal_personal_emails": reveal_personal_emails}
+        if apollo_id:
+            payload["id"] = apollo_id
+        else:
+            if first_name:
+                payload["first_name"] = first_name
+            if last_name:
+                payload["last_name"] = last_name
+            if org_name:
+                payload["organization_name"] = org_name
+            if domain:
+                payload["domain"] = domain
         data = self._post("/api/v1/people/match", payload)
         return _norm_person(data.get("person") or {})
 
@@ -139,19 +152,25 @@ class ApolloClient:
         return {"organizations": orgs}
 
 
+def _s(v) -> str:
+    """Coerce a string, tratando None como cadena vacía."""
+    return "" if v is None else str(v)
+
+
 def _norm_person(p: dict) -> dict:
     org = p.get("organization") or {}
     phones = p.get("phone_numbers") or []
-    phone = phones[0].get("sanitized_number") if phones else (p.get("sanitized_phone") or "")
+    phone = _s(phones[0].get("sanitized_number")) if phones else _s(p.get("sanitized_phone"))
+    nombre = (_s(p.get("first_name")) + " " + _s(p.get("last_name"))).strip() or _s(p.get("name"))
     return {
-        "nombre": (f"{p.get('first_name','')} {p.get('last_name','')}".strip() or p.get("name", "")),
-        "first_name": p.get("first_name", ""), "last_name": p.get("last_name", ""),
-        "cargo": p.get("title", ""), "seniority": p.get("seniority", ""),
-        "email": p.get("email", ""), "email_status": p.get("email_status", ""),
-        "linkedin": p.get("linkedin_url", ""), "telefono": phone,
-        "empresa": org.get("name", ""), "dominio": org.get("primary_domain", "") or org.get("website_url", ""),
-        "ciudad": p.get("city", "") or p.get("present_raw_address", ""),
-        "id": p.get("id", ""),
+        "nombre": nombre,
+        "first_name": _s(p.get("first_name")), "last_name": _s(p.get("last_name")),
+        "cargo": _s(p.get("title")), "seniority": _s(p.get("seniority")),
+        "email": _s(p.get("email")), "email_status": _s(p.get("email_status")),
+        "linkedin": _s(p.get("linkedin_url")), "telefono": phone,
+        "empresa": _s(org.get("name")), "dominio": _s(org.get("primary_domain") or org.get("website_url")),
+        "ciudad": _s(p.get("city")) or _s(p.get("present_raw_address")),
+        "id": _s(p.get("id")),
     }
 
 
