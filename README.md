@@ -13,6 +13,9 @@ contraseña.
 - **Plan de ataque** del Top 20 (argumento, ahorro, riesgos, objeciones, estrategia, probabilidades).
 - **Calculadora de TCO y CO₂** interactiva (diésel vs. EV48).
 - **Playbook de Apollo** (ICP, filtros, búsquedas por cuenta, secuencias, plantilla de correo).
+- **Apollo en vivo**: integración con la **API de Apollo** que trae decisores reales por empresa
+  (búsqueda + enriquecimiento bajo demanda). Requiere `apollo_api_key` en secrets/entorno y plan con
+  acceso a API; consume créditos.
 - **Informe ejecutivo** estilo McKinsey, descargable.
 - Matriz de priorización y fichas por empresa.
 

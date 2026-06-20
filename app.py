@@ -19,6 +19,7 @@ from lib import (fmt_clp, tco_por_vehiculo, ahorro_estimado_empresa, plan_ataque
                  apollo_query, top_inmediatas, top_faciles, top_volumen, top_piloto,
                  TIER_COLOR, PROB_EMOJI)
 from report import generar_informe
+import apollo_client as apollo
 
 st.set_page_config(page_title="E-Auto · Gecko EV48 Lead Hunter",
                    page_icon="⚡", layout="wide", initial_sidebar_state="expanded")
@@ -132,8 +133,8 @@ with st.sidebar:
     st.caption("Lead Hunter — Región Metropolitana")
     PAGES = ["🏠 Resumen ejecutivo", "🎯 Base de datos", "🏆 Rankings",
              "🧮 Modelo de scoring", "📈 Matriz de priorización", "⚔️ Plan de ataque (Top 20)",
-             "💰 Calculadora TCO & CO₂", "🔍 Playbook Apollo", "📄 Informe ejecutivo",
-             "ℹ️ Metodología"]
+             "💰 Calculadora TCO & CO₂", "🔍 Playbook Apollo", "🔌 Apollo en vivo",
+             "📄 Informe ejecutivo", "ℹ️ Metodología"]
     page = st.radio("Navegación", PAGES, label_visibility="collapsed")
     st.divider()
     st.metric("Cuentas en base", N)
@@ -520,11 +521,93 @@ de Apollo a esta base; (4) generar secuencias y empezar por los Top 10 fáciles 
     st.caption("E-Auto Global · Gecko EV48 · Dashboard de prospección — uso interno.")
 
 
+def page_apollo_live():
+    st.header("🔌 Apollo en vivo — decisores reales por empresa")
+    key = apollo.get_api_key()
+    if not key:
+        st.warning("No hay API key de Apollo configurada.")
+        st.markdown("""
+**Cómo conectar (no pegues la key en el chat):**
+1. En **Apollo → Settings → Integrations → API** copia tu *API Key*.
+2. **Local:** crea `.streamlit/secrets.toml` con `apollo_api_key = "TU_API_KEY"`, o exporta
+   `APOLLO_API_KEY=...` antes de `streamlit run`.
+3. **Streamlit Cloud:** pégala en *Settings → Secrets* como `apollo_api_key`.
+4. Recarga esta página.
+
+> Requiere que tu plan **Apollo Professional** tenga habilitado el **acceso a API**.
+> La búsqueda y el enriquecimiento **consumen créditos** de tu cuenta.
+""")
+        return
+
+    st.success("API key detectada. ⚠️ Cada búsqueda/enriquecimiento consume créditos de Apollo.")
+    if st.button("🔌 Probar conexión"):
+        try:
+            h = apollo.ApolloClient(key).health()
+            (st.success if h["ok"] else st.error)(
+                ("✅ Conexión OK — " if h["ok"] else "❌ Falló — ") + str(h["detalle"]))
+        except apollo.ApolloError as e:
+            st.error(str(e))
+
+    st.divider()
+    st.subheader("Buscar decisores por empresa")
+    pick = st.selectbox("Empresa", [c["nombre"] for c in EMP], key="ap_emp")
+    c = next(x for x in EMP if x["nombre"] == pick)
+    q = apollo_query(c)
+    titulos = st.text_area("Cargos objetivo (uno por línea)", "\n".join(q["person_titles"]), height=110)
+    cc = st.columns(3)
+    dominio = cc[0].text_input("Dominio (opcional, mejora precisión)", apollo.guess_domain(c["nombre"]))
+    loc = cc[1].text_input("Ubicación", "Chile")
+    per_page = cc[2].slider("N° resultados", 1, 25, 10)
+
+    if st.button("🔎 Buscar en Apollo", type="primary"):
+        try:
+            res = apollo.ApolloClient(key).search_people(
+                titles=[t.strip() for t in titulos.splitlines() if t.strip()],
+                locations=[loc] if loc else ["Chile"],
+                org_domains=[dominio] if dominio else None,
+                org_name=None if dominio else q["company"], per_page=per_page)
+            st.session_state["apollo_res"] = {"empresa": pick, "data": res}
+        except apollo.ApolloError as e:
+            st.error(str(e))
+            st.session_state.pop("apollo_res", None)
+
+    r = st.session_state.get("apollo_res")
+    if r and r["empresa"] == pick:
+        people = r["data"]["people"]
+        st.caption(f"{len(people)} contactos · total estimado en Apollo: {r['data'].get('total','?')}")
+        if people:
+            df = pd.DataFrame([{
+                "Nombre": p["nombre"], "Cargo": p["cargo"],
+                "Email": p["email"] or f"({p['email_status'] or 'oculto'})",
+                "Teléfono": p["telefono"], "LinkedIn": p["linkedin"], "Ciudad": p["ciudad"],
+            } for p in people])
+            st.dataframe(df, hide_index=True, use_container_width=True)
+            st.download_button("⬇️ Descargar contactos (CSV)", df.to_csv(index=False).encode("utf-8"),
+                               f"apollo_{apollo.guess_domain(pick)}.csv", "text/csv")
+            st.markdown("**Revelar email / teléfono (consume 1 crédito):**")
+            etiquetas = [f"{p['nombre']} — {p['cargo']}" for p in people]
+            who = st.selectbox("Contacto a enriquecer", etiquetas, key="ap_enrich")
+            if st.button("✨ Enriquecer contacto"):
+                pp = people[etiquetas.index(who)]
+                try:
+                    e = apollo.ApolloClient(key).enrich_person(
+                        pp["first_name"], pp["last_name"], org_name=pp["empresa"] or q["company"],
+                        domain=dominio or pp["dominio"])
+                    st.json({k: e.get(k) for k in
+                             ["nombre", "cargo", "email", "email_status", "telefono", "linkedin", "empresa"]})
+                except apollo.ApolloError as ex:
+                    st.error(str(ex))
+        else:
+            st.info("Sin resultados. Prueba con el dominio correcto o cargos más amplios.")
+    st.caption("La capa de contactos verificados vive en Apollo; aquí solo orquestamos las búsquedas del ICP.")
+
+
 ROUTES = {
     "🏠 Resumen ejecutivo": page_resumen, "🎯 Base de datos": page_base,
     "🏆 Rankings": page_rankings, "🧮 Modelo de scoring": page_scoring,
     "📈 Matriz de priorización": page_matriz, "⚔️ Plan de ataque (Top 20)": page_plan,
     "💰 Calculadora TCO & CO₂": page_tco, "🔍 Playbook Apollo": page_apollo,
+    "🔌 Apollo en vivo": page_apollo_live,
     "📄 Informe ejecutivo": page_informe, "ℹ️ Metodología": page_metodo,
 }
 ROUTES[page]()
