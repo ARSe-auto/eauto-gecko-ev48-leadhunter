@@ -109,7 +109,7 @@ class ApolloClient:
             payload["q_organization_domains_list"] = org_domains
         elif org_name:
             payload["q_keywords"] = org_name
-        data = self._post("/api/v1/mixed_people/search", payload)
+        data = self._post("/api/v1/mixed_people/api_search", payload)
         people = [_norm_person(p) for p in (data.get("people") or [])]
         pg = data.get("pagination", {}) or {}
         return {"people": people, "total": pg.get("total_entries"), "page": pg.get("page"),
@@ -131,7 +131,7 @@ class ApolloClient:
         payload = {"q_organization_name": name, "page": 1, "per_page": per_page}
         if locations:
             payload["organization_locations"] = locations
-        data = self._post("/api/v1/mixed_companies/search", payload)
+        data = self._post("/api/v1/mixed_companies/api_search", payload)
         orgs = []
         for o in (data.get("organizations") or data.get("accounts") or []):
             orgs.append({"name": o.get("name"), "domain": o.get("primary_domain") or o.get("website_url"),
