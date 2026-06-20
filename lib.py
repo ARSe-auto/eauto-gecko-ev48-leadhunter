@@ -53,13 +53,27 @@ def ahorro_estimado_empresa(c: dict, p: dict) -> dict:
     }
 
 
+# Cargos por defecto para la búsqueda en Apollo (siempre incluye Logística y Flota)
+DEFAULT_TITLES = [
+    "Gerente de Logística", "Jefe de Flota", "Gerente de Operaciones",
+    "Gerente de Supply Chain", "Gerente de Transporte", "Gerente de Sostenibilidad",
+    "Director de Operaciones", "Gerente General",
+]
+
+
 def apollo_query(c: dict) -> dict:
-    """Construye los parámetros de búsqueda Apollo para la empresa."""
-    titulos = c.get("decisores_titulos") or [
-        "Gerente de Logística", "Gerente de Operaciones", "Gerente de Sostenibilidad"]
+    """Construye los parámetros de búsqueda Apollo para la empresa.
+
+    Siempre antepone 'Gerente de Logística' y 'Jefe de Flota', luego suma los
+    cargos específicos de la empresa y completa con los defaults.
+    """
+    titulos = ["Gerente de Logística", "Jefe de Flota"]
+    for t in list(c.get("decisores_titulos") or []) + DEFAULT_TITLES:
+        if t not in titulos:
+            titulos.append(t)
     return {
         "company": c["nombre"].split("(")[0].split("/")[0].strip(),
-        "person_titles": titulos,
+        "person_titles": titulos[:8],
         "person_locations": ["Chile", "Santiago, Chile", "Región Metropolitana"],
         "keywords": "flota OR logística OR sostenibilidad OR last mile OR electromovilidad",
     }

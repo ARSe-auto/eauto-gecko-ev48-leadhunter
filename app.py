@@ -127,11 +127,69 @@ def tier_badge(t):
     return f"<span class='badge t{t}'>Tier {t}</span>"
 
 
+def render_apollo_block(company_query_name, titulos_iniciales, dominio_inicial, key_prefix):
+    """UI reutilizable: búsqueda + enriquecimiento de decisores en Apollo."""
+    key = apollo.get_api_key()
+    if not key:
+        st.info("Configura `apollo_api_key` en secrets/entorno para traer contactos desde Apollo "
+                "(Apollo → Settings → Integrations → API). La búsqueda/enriquecimiento consume créditos.")
+        return
+    titulos = st.text_area("Cargos objetivo (uno por línea)", "\n".join(titulos_iniciales),
+                           height=120, key=f"{key_prefix}_tit")
+    cc = st.columns(3)
+    dominio = cc[0].text_input("Dominio (opcional, mejora precisión)", dominio_inicial, key=f"{key_prefix}_dom")
+    loc = cc[1].text_input("Ubicación", "Chile", key=f"{key_prefix}_loc")
+    per_page = cc[2].slider("N° resultados", 1, 25, 10, key=f"{key_prefix}_pp")
+    if st.button("🔎 Buscar decisores en Apollo", type="primary", key=f"{key_prefix}_btn"):
+        try:
+            res = apollo.ApolloClient(key).search_people(
+                titles=[t.strip() for t in titulos.splitlines() if t.strip()],
+                locations=[loc] if loc else ["Chile"],
+                org_domains=[dominio] if dominio else None,
+                org_name=None if dominio else company_query_name, per_page=per_page)
+            st.session_state[f"{key_prefix}_res"] = res
+        except apollo.ApolloError as e:
+            st.error(str(e))
+            st.session_state.pop(f"{key_prefix}_res", None)
+    res = st.session_state.get(f"{key_prefix}_res")
+    if res:
+        people = res["people"]
+        st.caption(f"{len(people)} contactos · total estimado en Apollo: {res.get('total','?')} "
+                   "· (emails ocultos en la búsqueda; se revelan al enriquecer)")
+        if people:
+            df = pd.DataFrame([{
+                "Nombre": p["nombre"], "Cargo": p["cargo"],
+                "Email": p["email"] or f"({p['email_status'] or 'oculto'})",
+                "Teléfono": p["telefono"], "LinkedIn": p["linkedin"], "Ciudad": p["ciudad"],
+            } for p in people])
+            st.dataframe(df, hide_index=True, use_container_width=True)
+            st.download_button("⬇️ Descargar contactos (CSV)", df.to_csv(index=False).encode("utf-8"),
+                               f"apollo_{key_prefix}.csv", "text/csv", key=f"{key_prefix}_dl")
+            etiquetas = [f"{p['nombre']} — {p['cargo']}" for p in people]
+            who = st.selectbox("Revelar email/teléfono de:", etiquetas, key=f"{key_prefix}_who")
+            if st.button("✨ Enriquecer contacto (consume 1 crédito)", key=f"{key_prefix}_enr"):
+                pp = people[etiquetas.index(who)]
+                try:
+                    e = apollo.ApolloClient(key).enrich_person(
+                        apollo_id=pp.get("id"), first_name=pp["first_name"], last_name=pp["last_name"],
+                        org_name=pp["empresa"] or company_query_name, domain=dominio or pp["dominio"])
+                    est = {"verified": "✅ verificado", "extrapolated": "≈ extrapolado",
+                           "unavailable": "🔒 no disponible en Apollo", "": "—"}.get(
+                               e["email_status"], e["email_status"])
+                    st.success(f"**{e['nombre'] or pp['nombre']}** — {e['cargo'] or pp['cargo']}")
+                    st.markdown(f"📧 **{e['email'] or '— (sin email)'}** ({est}) · "
+                                f"📞 {e['telefono'] or '—'} · 🔗 {e['linkedin'] or '—'}")
+                except apollo.ApolloError as ex:
+                    st.error(str(ex))
+        else:
+            st.info("Sin resultados. Ajusta el dominio o usa cargos más amplios.")
+
+
 # ───────────────────────── SIDEBAR ─────────────────────────
 with st.sidebar:
     st.markdown("### ⚡ E-Auto · Gecko EV48")
     st.caption("Lead Hunter — Región Metropolitana")
-    PAGES = ["🏠 Resumen ejecutivo", "🎯 Base de datos", "🏆 Rankings",
+    PAGES = ["🏠 Resumen ejecutivo", "🎯 Base de datos", "🔎 Evaluar empresa nueva", "🏆 Rankings",
              "🧮 Modelo de scoring", "📈 Matriz de priorización", "⚔️ Plan de ataque (Top 20)",
              "💰 Calculadora TCO & CO₂", "🔍 Playbook Apollo", "🔌 Apollo en vivo",
              "📄 Informe ejecutivo", "ℹ️ Metodología"]
@@ -553,68 +611,82 @@ def page_apollo_live():
     pick = st.selectbox("Empresa", [c["nombre"] for c in EMP], key="ap_emp")
     c = next(x for x in EMP if x["nombre"] == pick)
     q = apollo_query(c)
-    titulos = st.text_area("Cargos objetivo (uno por línea)", "\n".join(q["person_titles"]), height=110)
-    cc = st.columns(3)
-    dominio = cc[0].text_input("Dominio (opcional, mejora precisión)", apollo.guess_domain(c["nombre"]))
-    loc = cc[1].text_input("Ubicación", "Chile")
-    per_page = cc[2].slider("N° resultados", 1, 25, 10)
-
-    if st.button("🔎 Buscar en Apollo", type="primary"):
-        try:
-            res = apollo.ApolloClient(key).search_people(
-                titles=[t.strip() for t in titulos.splitlines() if t.strip()],
-                locations=[loc] if loc else ["Chile"],
-                org_domains=[dominio] if dominio else None,
-                org_name=None if dominio else q["company"], per_page=per_page)
-            st.session_state["apollo_res"] = {"empresa": pick, "data": res}
-        except apollo.ApolloError as e:
-            st.error(str(e))
-            st.session_state.pop("apollo_res", None)
-
-    r = st.session_state.get("apollo_res")
-    if r and r["empresa"] == pick:
-        people = r["data"]["people"]
-        st.caption(f"{len(people)} contactos · total estimado en Apollo: {r['data'].get('total','?')}")
-        if people:
-            df = pd.DataFrame([{
-                "Nombre": p["nombre"], "Cargo": p["cargo"],
-                "Email": p["email"] or f"({p['email_status'] or 'oculto'})",
-                "Teléfono": p["telefono"], "LinkedIn": p["linkedin"], "Ciudad": p["ciudad"],
-            } for p in people])
-            st.dataframe(df, hide_index=True, use_container_width=True)
-            st.download_button("⬇️ Descargar contactos (CSV)", df.to_csv(index=False).encode("utf-8"),
-                               f"apollo_{apollo.guess_domain(pick)}.csv", "text/csv")
-            st.markdown("**Revelar email / teléfono (consume 1 crédito):**")
-            etiquetas = [f"{p['nombre']} — {p['cargo']}" for p in people]
-            who = st.selectbox("Contacto a enriquecer", etiquetas, key="ap_enrich")
-            if st.button("✨ Enriquecer contacto"):
-                pp = people[etiquetas.index(who)]
-                try:
-                    e = apollo.ApolloClient(key).enrich_person(
-                        apollo_id=pp.get("id"), first_name=pp["first_name"], last_name=pp["last_name"],
-                        org_name=pp["empresa"] or q["company"], domain=dominio or pp["dominio"])
-                    cE = st.columns(2)
-                    cE[0].markdown(
-                        f"**{e['nombre'] or pp['nombre']}** — {e['cargo'] or pp['cargo']}  \n"
-                        f"🏢 {e['empresa'] or pp['empresa']}")
-                    est = {"verified": "✅ verificado", "extrapolated": "≈ extrapolado",
-                           "unavailable": "🔒 no disponible en Apollo", "": "—"}.get(e["email_status"], e["email_status"])
-                    cE[1].markdown(
-                        f"📧 **{e['email'] or '— (sin email)'}**  ({est})  \n"
-                        f"📞 {e['telefono'] or '—'}  \n"
-                        f"🔗 {e['linkedin'] or '—'}")
-                    if not e["email"]:
-                        st.caption("Apollo no tiene email para este contacto (status 'unavailable'). "
-                                   "Prueba otro decisor de la lista o usa el LinkedIn.")
-                except apollo.ApolloError as ex:
-                    st.error(str(ex))
-        else:
-            st.info("Sin resultados. Prueba con el dominio correcto o cargos más amplios.")
+    render_apollo_block(q["company"], q["person_titles"], apollo.guess_domain(c["nombre"]),
+                        key_prefix=f"apl_{c['rank']}")
     st.caption("La capa de contactos verificados vive en Apollo; aquí solo orquestamos las búsquedas del ICP.")
+
+
+def page_evaluar():
+    st.header("🔎 Evaluar / rankear una empresa nueva")
+    st.caption("Ingresa cualquier empresa (esté o no en la base): el sistema la puntúa con el MISMO "
+               "modelo, te dice en qué puesto quedaría frente a las demás y Apollo trae sus decisores.")
+    nombre = st.text_input("Nombre de la empresa", placeholder="Ej: Transportes XYZ S.A.")
+
+    st.markdown("**Clasifica sus atributos** (ajusta lo que sepas; el resto deja el valor por defecto):")
+
+    def sel(col, field, label, default):
+        opts = list(LABELS[field].keys())
+        labs = [LABELS[field][k] for k in opts]
+        ch = col.selectbox(label, labs, index=opts.index(default), key=f"ev_{field}")
+        return opts[labs.index(ch)]
+
+    cols = st.columns(2)
+    flota = sel(cols[0], "flota_band", "Flota (tamaño y propiedad)", "mediana")
+    urbano = sel(cols[1], "urbano_level", "Recorridos urbanos", "distribucion_mixta")
+    esg = sel(cols[0], "esg_level", "Madurez ESG", "medio")
+    fin = sel(cols[1], "fin_level", "Capacidad financiera", "media")
+    adop = sel(cols[0], "adopcion_level", "Facilidad de adopción", "media")
+    acc = sel(cols[1], "acceso_level", "Acceso a decisores", "medio")
+    canal = sel(cols[0], "canal_compra", "Canal de compra", "venta_directa")
+    comp = sel(cols[1], "competidor_ev", "Competidor EV instalado", "ninguno")
+
+    c = {"nombre": nombre or "Empresa nueva", "industria": "(ingresada manualmente)", "nivel": 1,
+         "foco_rm": True, "flota_band": flota, "urbano_level": urbano, "esg_level": esg,
+         "fin_level": fin, "adopcion_level": adop, "acceso_level": acc, "canal_compra": canal,
+         "competidor_ev": comp, "decisores_titulos": []}
+    e = scoring.enrich(c)
+    pos = 1 + sum(1 for x in EMP if x["score"] > e["score"])
+    total = len(EMP) + 1
+    pct = round(100 * (total - pos) / total)
+
+    st.subheader(f"Resultado: {c['nombre']}")
+    m = st.columns(4)
+    m[0].metric("Lead Score", e["score"])
+    m[1].metric("Tier", e["tier"])
+    m[2].metric("Prob. compra", e["prob_compra"])
+    m[3].metric("Ranking", f"#{pos} de {total}")
+    st.caption(f"Quedaría por sobre el **{pct}%** de las {len(EMP)} empresas de la base "
+               f"(percentil {pct}).")
+
+    a, b = st.columns([1, 1])
+    with a:
+        sub = e["sub"]
+        dd = pd.DataFrame([{"Dimensión": k, "Puntaje": v} for k, v in {
+            "Flota": sub["flota"], "Urbano": sub["urbano"], "ESG": sub["esg"],
+            "Financiero": sub["financiero"], "Adopción": sub["adopcion"], "Acceso": sub["acceso"]}.items()])
+        st.altair_chart(alt.Chart(dd).mark_bar(color="#00B86B").encode(
+            x=alt.X("Puntaje:Q", scale=alt.Scale(domain=[0, 100])),
+            y=alt.Y("Dimensión:N", sort="-x"), tooltip=["Dimensión", "Puntaje"]).properties(height=220),
+            use_container_width=True)
+    with b:
+        ordenada = sorted(EMP, key=lambda x: x["score"], reverse=True)
+        arriba = [x for x in ordenada if x["score"] >= e["score"]][-2:]
+        abajo = [x for x in ordenada if x["score"] < e["score"]][:2]
+        st.markdown("**Vecinos en el ranking** (para contexto):")
+        vec = [{"Empresa": x["nombre"][:34], "Score": x["score"], "Tier": x["tier"]} for x in arriba]
+        vec += [{"Empresa": f"➡️ {c['nombre'][:31]}", "Score": e["score"], "Tier": e["tier"]}]
+        vec += [{"Empresa": x["nombre"][:34], "Score": x["score"], "Tier": x["tier"]} for x in abajo]
+        st.dataframe(pd.DataFrame(vec), hide_index=True, use_container_width=True)
+
+    st.divider()
+    st.subheader("Decisores en Apollo")
+    render_apollo_block(c["nombre"], apollo_query(c)["person_titles"],
+                        apollo.guess_domain(c["nombre"]), key_prefix="ev")
 
 
 ROUTES = {
     "🏠 Resumen ejecutivo": page_resumen, "🎯 Base de datos": page_base,
+    "🔎 Evaluar empresa nueva": page_evaluar,
     "🏆 Rankings": page_rankings, "🧮 Modelo de scoring": page_scoring,
     "📈 Matriz de priorización": page_matriz, "⚔️ Plan de ataque (Top 20)": page_plan,
     "💰 Calculadora TCO & CO₂": page_tco, "🔍 Playbook Apollo": page_apollo,
