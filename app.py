@@ -54,6 +54,21 @@ def _expected_password():
 def check_password() -> bool:
     if st.session_state.get("auth_ok"):
         return True
+    # Bypass para uso embebido (p.ej. dentro del CRM, que ya autenticó al usuario):
+    # si la URL trae ?t=<embed_token> que coincide con el secret, entra sin pedir clave.
+    try:
+        tok = st.query_params.get("t")
+    except Exception:
+        tok = None
+    if tok:
+        try:
+            exp_tok = str(st.secrets["embed_token"]) if "embed_token" in st.secrets else None
+        except Exception:
+            exp_tok = None
+        exp_tok = exp_tok or os.environ.get("EAUTO_EMBED_TOKEN")
+        if exp_tok and hmac.compare_digest(tok, exp_tok):
+            st.session_state["auth_ok"] = True
+            return True
     st.markdown("<div class='hero'><h1>⚡ E-Auto Global · Gecko EV48</h1>"
                 "<p>Lead Hunter — acceso restringido</p></div>", unsafe_allow_html=True)
     expected = _expected_password()
