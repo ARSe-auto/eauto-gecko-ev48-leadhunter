@@ -26,14 +26,20 @@ st.set_page_config(page_title="E-Auto · Gecko EV48 Lead Hunter",
 
 CSS = """
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+html, body, [class*="css"], .stMarkdown, button, input, textarea, select {font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;}
+[data-testid="stMetricValue"], code {font-family:'JetBrains Mono',ui-monospace,monospace; font-variant-numeric:tabular-nums; letter-spacing:-.01em;}
 .block-container {padding-top: 1.6rem; max-width: 1400px;}
-[data-testid="stMetric"] {background:#1A1F2B; border:1px solid #283041; border-radius:12px; padding:14px;}
-.badge {display:inline-block; padding:2px 9px; border-radius:9px; font-size:0.72rem; font-weight:700; color:#0E1117;}
-.tA{background:#00B86B;} .tB{background:#3DA5FF;} .tC{background:#F5A623;} .tD{background:#9AA0A6;}
-.pill {display:inline-block;padding:2px 8px;border-radius:8px;font-size:0.7rem;background:#283041;color:#C9D2E0;margin:1px;}
-.hero {background:linear-gradient(110deg,#062a1c,#0E1117 60%);border:1px solid #134;border-radius:16px;padding:18px 22px;margin-bottom:8px;}
-.hero h1{margin:0;font-size:1.5rem;} .hero p{margin:4px 0 0;color:#9fb3c8;}
-small.src{color:#7d8aa0;}
+[data-testid="stMetric"] {background:#161616; border:1px solid #262626; border-radius:4px; padding:14px;}
+[data-testid="stMetricLabel"] p {text-transform:uppercase; letter-spacing:.1em; font-size:.74rem; color:#cfcfcf;}
+.badge {display:inline-block; padding:2px 10px; border-radius:4px; font-size:0.72rem; font-weight:700; color:#0a0a0a;}
+.tA{background:#009406;} .tB{background:#3f9e6e;} .tC{background:#ffae78;} .tD{background:#7a7a7a;}
+.pill {display:inline-block;padding:2px 9px;border-radius:4px;font-size:0.7rem;background:#141414;color:#cfcfcf;margin:1px;border:1px solid #262626;}
+.hero {background:linear-gradient(110deg,#06200f,#0a0a0a 62%);border:1px solid #11341d;border-left:3px solid #009406;border-radius:4px;padding:16px 22px;margin-bottom:10px;}
+.hero h1{margin:0;font-size:1.5rem;letter-spacing:-.01em;} .hero p{margin:5px 0 0;color:#cfcfcf;font-weight:300;}
+.eyebrow{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#009406;font-weight:600;}
+.stButton>button[kind="primary"], .stButton>button[kind="primaryFormSubmit"]{background:#009406;border-color:#009406;}
+small.src{color:#7a7a7a;}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
@@ -138,7 +144,7 @@ def matrix_chart(emp, x="facilidad_cierre", y="impacto_volumen",
         y=alt.Y(f"{y}:Q", title=yt, scale=alt.Scale(zero=False)),
         size=alt.Size("Score:Q", scale=alt.Scale(range=[40, 500]), legend=None),
         color=alt.Color("Tier:N", scale=alt.Scale(
-            domain=["A", "B", "C", "D"], range=["#00B86B", "#3DA5FF", "#F5A623", "#9AA0A6"])),
+            domain=["A", "B", "C", "D"], range=["#009406", "#3f9e6e", "#ffae78", "#7a7a7a"])),
         tooltip=["Empresa", "Industria", "Tier", "Score", "Prob", x, y],
     ).properties(height=460).interactive())
 
@@ -246,7 +252,7 @@ def page_resumen():
             x=alt.X("Tier:N", sort=["A", "B", "C", "D"]),
             y="Cuentas:Q",
             color=alt.Color("Tier:N", scale=alt.Scale(
-                domain=["A", "B", "C", "D"], range=["#00B86B", "#3DA5FF", "#F5A623", "#9AA0A6"]),
+                domain=["A", "B", "C", "D"], range=["#009406", "#3f9e6e", "#ffae78", "#7a7a7a"]),
                 legend=None),
             tooltip=["Tier", "Cuentas"]).properties(height=260)
         st.altair_chart(ch, use_container_width=True)
@@ -254,7 +260,7 @@ def page_resumen():
         st.subheader("Cuentas por nivel de industria")
         dn = pd.DataFrame([{"Nivel": f"Nivel {k}", "Cuentas": sum(x["nivel"] == k for x in EMP)}
                            for k in (1, 2, 3)])
-        ch = alt.Chart(dn).mark_bar(color="#00B86B").encode(
+        ch = alt.Chart(dn).mark_bar(color="#009406").encode(
             x="Nivel:N", y="Cuentas:Q", tooltip=["Nivel", "Cuentas"]).properties(height=260)
         st.altair_chart(ch, use_container_width=True)
 
@@ -322,7 +328,7 @@ def ficha(c):
     dd = pd.DataFrame([{"Dimensión": k.capitalize(), "Puntaje": v} for k, v in {
         "flota": sub["flota"], "urbano": sub["urbano"], "esg": sub["esg"],
         "financiero": sub["financiero"], "adopción": sub["adopcion"], "acceso": sub["acceso"]}.items()])
-    ch = alt.Chart(dd).mark_bar(color="#00B86B").encode(
+    ch = alt.Chart(dd).mark_bar(color="#009406").encode(
         x=alt.X("Puntaje:Q", scale=alt.Scale(domain=[0, 100])),
         y=alt.Y("Dimensión:N", sort="-x"), tooltip=["Dimensión", "Puntaje"]).properties(height=200)
     cols = st.columns([1, 1])
@@ -406,7 +412,7 @@ def page_scoring():
         x=alt.X("Adopción:Q", title="Facilidad de adopción →", scale=alt.Scale(zero=False)),
         y=alt.Y("Score:Q", scale=alt.Scale(zero=False)),
         color=alt.Color("Tier:N", scale=alt.Scale(
-            domain=["A", "B", "C", "D"], range=["#00B86B", "#3DA5FF", "#F5A623", "#9AA0A6"])),
+            domain=["A", "B", "C", "D"], range=["#009406", "#3f9e6e", "#ffae78", "#7a7a7a"])),
         tooltip=["Empresa", "Industria", "Tier", "Score"]).properties(height=420).interactive()
     st.altair_chart(ch, use_container_width=True)
 
@@ -495,7 +501,7 @@ def page_tco():
     ch = alt.Chart(comp).mark_bar().encode(
         x=alt.X("Tecnología:N", title=None), y="CLP/año:Q",
         color=alt.Color("Tecnología:N", scale=alt.Scale(
-            domain=["Diésel", "EV48"], range=["#9AA0A6", "#00B86B"]), legend=None),
+            domain=["Diésel", "EV48"], range=["#7a7a7a", "#009406"]), legend=None),
         column=alt.Column("Concepto:N", title=None),
         tooltip=["Tecnología", "CLP/año"]).properties(height=260, width=180)
     st.altair_chart(ch)
@@ -684,7 +690,7 @@ def page_evaluar():
         dd = pd.DataFrame([{"Dimensión": k, "Puntaje": v} for k, v in {
             "Flota": sub["flota"], "Urbano": sub["urbano"], "ESG": sub["esg"],
             "Financiero": sub["financiero"], "Adopción": sub["adopcion"], "Acceso": sub["acceso"]}.items()])
-        st.altair_chart(alt.Chart(dd).mark_bar(color="#00B86B").encode(
+        st.altair_chart(alt.Chart(dd).mark_bar(color="#009406").encode(
             x=alt.X("Puntaje:Q", scale=alt.Scale(domain=[0, 100])),
             y=alt.Y("Dimensión:N", sort="-x"), tooltip=["Dimensión", "Puntaje"]).properties(height=220),
             use_container_width=True)

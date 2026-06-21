@@ -9,7 +9,7 @@ VANS_ASUMIDAS = {
 }
 
 PROB_EMOJI = {"Muy Alta": "🟢🟢", "Alta": "🟢", "Media": "🟡", "Baja": "🔴"}
-TIER_COLOR = {"A": "#00B86B", "B": "#3DA5FF", "C": "#F5A623", "D": "#9AA0A6"}
+TIER_COLOR = {"A": "#009406", "B": "#3f9e6e", "C": "#ffae78", "D": "#7a7a7a"}
 
 
 def fmt_clp(v) -> str:
