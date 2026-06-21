@@ -40,6 +40,24 @@ html, body, [class*="css"], .stMarkdown, button, input, textarea, select {font-f
 .eyebrow{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#009406;font-weight:600;}
 .stButton>button[kind="primary"], .stButton>button[kind="primaryFormSubmit"]{background:#009406;border-color:#009406;}
 small.src{color:#7a7a7a;}
+@media (max-width: 640px) {
+  .block-container {padding:0.8rem 0.7rem !important; max-width:100% !important;}
+  [data-testid="stHorizontalBlock"] {flex-wrap:wrap !important; gap:0.5rem !important;}
+  [data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+  [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+     flex:1 1 100% !important; min-width:100% !important; width:100% !important;}
+  [data-testid="stColumn"]:has([data-testid="stMetric"]),
+  [data-testid="column"]:has([data-testid="stMetric"]) {
+     flex:1 1 calc(50% - 0.5rem) !important; min-width:calc(50% - 0.5rem) !important;
+     width:calc(50% - 0.5rem) !important;}
+  [data-testid="stMetric"] {padding:10px 12px;}
+  [data-testid="stMetricValue"] {font-size:1.4rem !important;}
+  [data-testid="stMetricLabel"] p {font-size:.62rem !important;}
+  .hero {padding:12px 14px;} .hero h1 {font-size:1.12rem !important;}
+  .hero p {font-size:.82rem !important;}
+  h1 {font-size:1.25rem !important;} h2 {font-size:1.05rem !important;}
+  [data-testid="stDataFrame"] {overflow-x:auto !important;}
+}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
