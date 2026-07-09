@@ -1,0 +1,13 @@
+{
+  "name": "eauto-cazador-keepalive",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Keep-alive del Cazador de Leads: despierta la app de Streamlit Community Cloud para que no hiberne.",
+  "scripts": {
+    "keepalive": "node keep-awake.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
