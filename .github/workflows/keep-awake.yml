@@ -1,0 +1,47 @@
+name: Mantener despierto el Cazador
+
+# Streamlit Community Cloud hiberna la app tras varios días sin visitas, y eso deja en
+# blanco la sección «Cazador de Leads» del CRM (que la embebe en un iframe). Un ping HTTP
+# no la despierta (responde 200 aun dormida): hay que abrirla con un navegador real y
+# clickear el botón de despertar. Este cron lo hace cada 6 h y, de paso, cada visita
+# resetea el contador de inactividad, así que la mantiene siempre viva.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # 00:17, 06:17, 12:17, 18:17 UTC (cada 6 horas)
+  workflow_dispatch:          # permite dispararlo a mano desde la pestaña Actions
+
+# Evita solapes si una corrida se demora.
+concurrency:
+  group: cazador-keepalive
+  cancel-in-progress: false
+
+jobs:
+  keep-awake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Playwright (Chromium)
+        working-directory: scripts
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: Despertar / mantener viva la app
+        working-directory: scripts
+        run: node keep-awake.mjs
+
+      - name: Guardar evidencia (screenshot)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: keepalive-screenshot
+          path: scripts/keepalive-screenshot.png
+          if-no-files-found: ignore
+          retention-days: 7

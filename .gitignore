@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 .venv/
 venv/
+
+# keep-alive (tooling Node en scripts/)
+node_modules/
+scripts/node_modules/
+scripts/package-lock.json
+scripts/keepalive-screenshot.png
